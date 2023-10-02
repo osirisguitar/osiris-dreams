@@ -20,39 +20,43 @@ export default function Home() {
         <SomePromo
           logo='/bandcamp.svg'
           heading='Bandcamp'
-          body='Buy the songs to stream and download (most money to the artists).'
+          body='Buy the songs to stream and download (best for artists)'
           link='https://osirisdreams.bandcamp.com'
         />
         <SomePromo
           logo='/youtube.svg'
           heading='YouTube'
-          body='Stream the songs or watch the music videos.'
+          body='Stream the songs or watch the music videos'
           link='https://youtube.com/@osiris-dreams'
         />
         <SomePromo
           logo='/spotify.svg'
           heading='Spotify'
-          body='Stream the songs.'
+          body='Stream the songs'
           link='https://open.spotify.com/artist/0WyMlVGSisImMQOxmsnsl4?si=KtNVUUfhRVqwPr-ZrXSjUg'
         />
         <SomePromo
           logo='/tiktok.svg'
           heading='TikTok'
-          body='Use the songs in your videos (search for OSIRIS DREAMS in sounds).'
+          body='Use the songs in your videos (search for OSIRIS DREAMS sounds)'
           link='https://www.tiktok.com/@osiris.dreams'
         />
         <SomePromo
           logo='/instagram.svg'
           heading='Instagram'
-          body='Use the songs in your reels (search for OSIRIS DREAMS in sounds).'
+          body='Use the songs in your reels (search for OSIRIS DREAMS in sounds)'
           link='https://instagram.com'
         />
         <SomePromo
           logo='/apple-music.svg'
           heading='Apple Music'
-          body='Buy or stream the songs.'
+          body='Buy or stream the songs'
           link='https://music.apple.com/us/artist/osiris-dreams/1656218279'
         />
+      </div>
+      <div className='font-mono'>
+        Contact:{' '}
+        <a href='mailto:osiris@osirisdreams.com'>osiris@osirisdreams.com</a>
       </div>
     </main>
   )

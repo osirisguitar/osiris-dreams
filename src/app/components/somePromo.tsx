@@ -12,7 +12,7 @@ export const SomePromo = ({
   link: string
 }) => {
   const streamingClass =
-    'group rounded-lg px-5 py-4 m-3 border-4 border-[#F515AC] outline outline-4 outline-[#5EC4FF] bg-black bg-opacity-60'
+    'group rounded-lg px-5 py-4 m-3 border-4 border-[#F515AC] outline outline-4 outline-[#5EC4FF] bg-black bg-opacity-60 font-mono'
 
   return (
     <a
@@ -33,7 +33,7 @@ export const SomePromo = ({
         <h2 className={`px-3 text-2xl font-semibold`}>
           {heading}{' '}
           <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
-            -&gt;
+            &gt;
           </span>
         </h2>
       </div>

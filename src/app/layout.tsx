@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'OSIRIS DREAMS',
-  description: 'Official Artist Site',
+  description: 'Enter the Ethereal Synthwave Dreamscape',
   icons: '/osiris-dreams-logo.svg',
 }
 
