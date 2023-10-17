@@ -45,7 +45,7 @@ export default function Home() {
           logo='/instagram.svg'
           heading='Instagram'
           body='Use the songs in your reels (search for OSIRIS DREAMS in sounds)'
-          link='https://instagram.com'
+          link='https://instagram.com/osirisdreams'
         />
         <SomePromo
           logo='/apple-music.svg'
@@ -54,7 +54,7 @@ export default function Home() {
           link='https://music.apple.com/us/artist/osiris-dreams/1656218279'
         />
       </div>
-      <div className='font-mono'>
+      <div className='font-mono mt-8'>
         Contact:{' '}
         <a href='mailto:osiris@osirisdreams.com'>osiris@osirisdreams.com</a>
       </div>
