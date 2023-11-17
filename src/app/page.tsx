@@ -57,6 +57,11 @@ export default function Home() {
       <div className='font-mono mt-8'>
         Contact:{' '}
         <a href='mailto:osiris@osirisdreams.com'>osiris@osirisdreams.com</a>
+        <br />
+        Mastodon:{' '}
+        <a rel='me' href='https://mastodon.nu/@osiris'>
+          @osiris@mastodon.nu
+        </a>
       </div>
     </main>
   )
