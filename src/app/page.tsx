@@ -10,11 +10,21 @@ export default function Home() {
           alt='OSIRIS DREAMS'
           className='drop-shadow-sm p-3'
           style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
-          width={800}
+          width={400}
           height={200}
           priority
         />
       </div>
+
+      <iframe
+        width='800'
+        height='400'
+        className='mb-20 mt-10'
+        src='https://www.youtube.com/embed/vr4oNy64hXQ?si=N4pJLQJNrJBSY2Pn'
+        title='YouTube video player'
+        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+        allowFullScreen={true}
+      ></iframe>
 
       <div className='mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-2 lg:grid-cols-3 lg:text-left'>
         <SomePromo
