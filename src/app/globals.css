@@ -35,3 +35,13 @@ video {
   left: 0;
   opacity: 0.6;
 }
+
+@font-face {
+  font-family: 'cyberspace-raceway-front';
+  src: url('/Cyberspace-Raceway-Front.otf');
+}
+
+@font-face {
+  font-family: 'cyberspace-raceway-back';
+  src: url('/Cyberspace-Raceway-Back.otf');
+}

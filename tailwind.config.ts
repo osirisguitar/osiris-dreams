@@ -13,6 +13,10 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        racewayBack: ['cyberspace-raceway-back', 'sans-serif'],
+        racewayFront: ['cyberspace-raceway-front', 'sans-serif'],
+      },
     },
   },
   plugins: [],

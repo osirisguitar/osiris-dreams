@@ -30,12 +30,12 @@ export const SomePromo = ({
           height={50}
           priority
         />
-        <h2 className={`px-3 text-2xl font-semibold`}>
+        <h3 className={`px-3 text-xl font-semibold`}>
           {heading}{' '}
           <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
             &gt;
           </span>
-        </h2>
+        </h3>
       </div>
       <div>
         <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>{body}</p>

@@ -1,22 +1,43 @@
 import Image from 'next/image'
 import { SomePromo } from './components/somePromo'
+import { SongPromo } from './components/songPromo'
+import { Heading } from './components/heading'
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between lg:p-24'>
-      <div className='max-w-5xl items-center justify-between font-mono text-sm lg:flex'>
+    <main className='flex min-h-screen flex-col items-center justify-between'>
+      <div className='lg:pt-4 flex-row hidden md:flex'>
+        <a href='#promo'>
+          <Heading text='News' style='h3' />
+        </a>
+        <span className='px-3'>|</span>
+        <a href='#songs'>
+          <Heading text='Songs' style='h3' />
+        </a>
+        <span className='px-3'>|</span>
+        <a href='#streaming-services'>
+          <Heading text='Streaming Services' style='h3' />
+        </a>
+        <span className='px-3'>|</span>
+        <a href='#contact'>
+          <Heading text='Contact' style='h3' />
+        </a>
+      </div>
+      <div className='max-w-5xl items-center justify-between font-mono text-sm lg:flex lg:pt-20'>
         <Image
           src='/osiris-dreams-logo.svg'
           alt='OSIRIS DREAMS'
           className='drop-shadow-sm p-3'
           style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
-          width={400}
-          height={200}
+          width={500}
+          height={350}
           priority
         />
       </div>
-
-      <div className='w-4/5 h-[calc(100vh_*_0.4)] mb-20 max-w-[600px]'>
+      <div
+        id='promo'
+        className='w-4/5 h-[calc(100vh_*_0.4)] mb-20 max-w-[600px]'
+      >
         <iframe
           width='100%'
           height='100%'
@@ -27,7 +48,39 @@ export default function Home() {
           allowFullScreen={true}
         ></iframe>
       </div>
-      <div className='mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-2 lg:grid-cols-3 lg:text-left'>
+
+      <Heading id='songs' text='Songs' style='h2' />
+
+      <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-1 lg:grid-cols-2 lg:text-left'>
+        <SongPromo
+          name='Driving Alone'
+          albumCover='/driving-alone.png'
+          link='https://songwhip.com/osirisdreams/driving-alone'
+        ></SongPromo>
+        <SongPromo
+          name='Skiing on the Moon'
+          albumCover='/skiing-on-the-moon.png'
+          link='https://songwhip.com/osirisdreams/skiing-on-the-moon'
+        ></SongPromo>
+        <SongPromo
+          name='3 AM 6502 Debugging'
+          albumCover='/3-am-6502-debugging.jpg'
+          link='https://songwhip.com/osirisdreams/3-am-6502-debugging'
+        ></SongPromo>
+        <SongPromo
+          name='Light Cycle Arena'
+          albumCover='/light-cycle-arena.png'
+          link='https://songwhip.com/osirisdreams/light-cycle-arena'
+        ></SongPromo>
+        <SongPromo
+          name='Hyperspace Sunday Cruise'
+          albumCover='/hyperspace-sunday-cruise.png'
+          link='https://songwhip.com/osirisdreams/hyperspace-sunday-cruise'
+        ></SongPromo>
+      </div>
+
+      <Heading id='streaming-services' text='Streaming Services' style='h2' />
+      <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-2 lg:grid-cols-3 lg:text-left'>
         <SomePromo
           logo='/bandcamp.svg'
           heading='Bandcamp'
@@ -65,8 +118,9 @@ export default function Home() {
           link='https://music.apple.com/us/artist/osiris-dreams/1656218279'
         />
       </div>
+      <Heading id='contact' text='Contact' style='h2' />
       <div className='font-mono mt-8'>
-        Contact:{' '}
+        Email:{' '}
         <a href='mailto:osiris@osirisdreams.com'>osiris@osirisdreams.com</a>
         <br />
         Mastodon:{' '}
