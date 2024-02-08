@@ -1,9 +1,16 @@
+'use client'
 import Image from 'next/image'
 import { SomePromo } from './components/somePromo'
 import { SongPromo } from './components/songPromo'
 import { Heading } from './components/heading'
+import { init } from '@socialgouv/matomo-next'
+import { useEffect } from 'react'
 
 export default function Home() {
+  useEffect(() => {
+    init({ url: 'https://matomo.bornholm.se/', siteId: '2' })
+  }, [])
+
   return (
     <main className='flex min-h-screen flex-col items-center justify-between'>
       <div className='lg:pt-4 flex-row hidden md:flex'>

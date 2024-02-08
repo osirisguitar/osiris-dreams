@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@datapunt/matomo-tracker-react": "^0.5.1",
+    "@socialgouv/matomo-next": "^1.8.0",
     "next": "^14.1.0",
     "react": "latest",
     "react-dom": "latest"
