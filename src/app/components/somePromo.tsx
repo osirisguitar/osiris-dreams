@@ -20,7 +20,7 @@ export const SomePromo = ({
       href={link}
       className={streamingClass}
       onClick={() => {
-        push(['click', 'service', heading])
+        push(['trackEvent', 'service', heading])
       }}
       target='_blank'
       rel='noopener noreferrer'

@@ -18,7 +18,7 @@ export const SongPromo = ({
     <a
       href={link}
       onClick={() => {
-        push(['click', 'song', name])
+        push(['trackEvent', 'song', name])
       }}
       className={streamingClass}
       target='_blank'
