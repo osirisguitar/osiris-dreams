@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { push } from '@socialgouv/matomo-next'
 
 export const SomePromo = ({
   logo,
@@ -18,6 +19,9 @@ export const SomePromo = ({
     <a
       href={link}
       className={streamingClass}
+      onClick={() => {
+        push(['click', 'service', heading])
+      }}
       target='_blank'
       rel='noopener noreferrer'
     >

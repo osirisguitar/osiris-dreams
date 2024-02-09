@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { StreamingIcon } from './streamingIcon'
+import { push } from '@socialgouv/matomo-next'
 
 export const SongPromo = ({
   albumCover,
@@ -16,6 +17,9 @@ export const SongPromo = ({
   return (
     <a
       href={link}
+      onClick={() => {
+        push(['click', 'song', name])
+      }}
       className={streamingClass}
       target='_blank'
       rel='noopener noreferrer'
