@@ -126,7 +126,7 @@ export default function Home() {
         />
       </div>
       <Heading id='contact' text='Contact' style='h2' />
-      <div className='font-mono mt-8'>
+      <div className='font-mono mt-8 mb-10'>
         Email:{' '}
         <a href='mailto:osiris@osirisdreams.com'>osiris@osirisdreams.com</a>
         <br />
