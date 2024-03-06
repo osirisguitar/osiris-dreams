@@ -41,6 +41,10 @@ export default function Home() {
           priority
         />
       </div>
+      <Heading id='songs' text='The Ethereal Synthwave Dreamscape' style='h2' />
+      <div className='text-l font-semibold'>
+        Inspired by Jean-Michel Jarre, Vangelis, Front 242 and chiptunes
+      </div>
       <div
         id='promo'
         className='w-4/5 h-[calc(100vh_*_0.4)] mb-20 max-w-[600px]'
@@ -49,7 +53,7 @@ export default function Home() {
           width='100%'
           height='100%'
           className='mb-20 mt-10'
-          src='https://www.youtube.com/embed/vr4oNy64hXQ?si=N4pJLQJNrJBSY2Pn'
+          src='https://www.youtube.com/embed/kZkhkwLXbcM?si=S5WFACIyqh11GBXH'
           title='YouTube video player'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           allowFullScreen={true}
