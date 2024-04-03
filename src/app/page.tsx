@@ -42,7 +42,7 @@ export default function Home() {
         />
       </div>
       <Heading id='songs' text='The Ethereal Synthwave Dreamscape' style='h2' />
-      <div className='text-l font-semibold'>
+      <div className='text-l font-semibold text-center'>
         Inspired by Jean-Michel Jarre, Vangelis, Front 242 and chiptunes
       </div>
       <div
