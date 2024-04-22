@@ -74,7 +74,7 @@ export default function Home() {
       />
       <div id='promo' className=''>
         <Countdown
-          date={new Date(2024, 3, 25, 12, 0, 0)}
+          date={'2024-04-26T10:00:00Z'}
           renderer={renderer}
         ></Countdown>
       </div>
