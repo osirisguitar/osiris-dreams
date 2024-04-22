@@ -68,11 +68,11 @@ export default function Home() {
         />
       </div>
       <Heading
-        id='songs'
+        id='promo'
         text='The Cybergenix Conspiracy EP - April 26'
         style='h2'
       />
-      <div id='promo' className=''>
+      <div>
         <Countdown
           date={'2024-04-26T10:00:00Z'}
           renderer={renderer}
