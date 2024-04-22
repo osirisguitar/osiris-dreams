@@ -5,11 +5,37 @@ import { SongPromo } from './components/songPromo'
 import { Heading } from './components/heading'
 import { init } from '@socialgouv/matomo-next'
 import { useEffect } from 'react'
+import Countdown, { zeroPad } from 'react-countdown'
 
 export default function Home() {
   useEffect(() => {
     init({ url: 'https://matomo.bornholm.se/', siteId: '2' })
   }, [])
+
+  const renderer = ({
+    days,
+    hours,
+    minutes,
+    seconds,
+    completed,
+  }: {
+    days: number
+    hours: number
+    minutes: number
+    seconds: number
+    completed: boolean
+  }) => {
+    if (completed) {
+      // Render a completed state
+      return <></>
+    } else {
+      // Render a countdown
+      const countdown = `${days} : ${zeroPad(hours)} : ${zeroPad(
+        minutes
+      )} : ${zeroPad(seconds)}`
+      return <Heading text={countdown} style='h1' />
+    }
+  }
 
   return (
     <main className='flex min-h-screen flex-col items-center justify-between'>
@@ -41,23 +67,16 @@ export default function Home() {
           priority
         />
       </div>
-      <Heading id='songs' text='The Ethereal Synthwave Dreamscape' style='h2' />
-      <div className='text-l font-semibold text-center'>
-        Inspired by Jean-Michel Jarre, Vangelis, Front 242 and chiptunes
-      </div>
-      <div
-        id='promo'
-        className='w-4/5 h-[calc(100vh_*_0.4)] mb-20 max-w-[600px]'
-      >
-        <iframe
-          width='100%'
-          height='100%'
-          className='mb-20 mt-10'
-          src='https://www.youtube.com/embed/kZkhkwLXbcM?si=S5WFACIyqh11GBXH'
-          title='YouTube video player'
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          allowFullScreen={true}
-        ></iframe>
+      <Heading
+        id='songs'
+        text='The Cybergenix Conspiracy EP - April 26'
+        style='h2'
+      />
+      <div id='promo' className=''>
+        <Countdown
+          date={new Date(2024, 3, 25, 12, 0, 0)}
+          renderer={renderer}
+        ></Countdown>
       </div>
 
       <Heading id='songs' text='Songs' style='h2' />

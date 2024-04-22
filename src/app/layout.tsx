@@ -27,7 +27,7 @@ export default function RootLayout({
           id='bgvid'
           className='-z-10 saturate-50'
         >
-          <source src='background.mp4' type='video/mp4' />
+          <source src='background2.mp4' type='video/mp4' />
         </video>
         {children}
       </body>
