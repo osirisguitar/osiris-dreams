@@ -41,11 +41,11 @@ export default function Home() {
     <main className='flex min-h-screen flex-col items-center justify-between'>
       <div className='lg:pt-4 flex-row hidden md:flex'>
         <a href='#promo'>
-          <Heading text='News' style='h3' />
+          <Heading text='EPs' style='h3' />
         </a>
         <span className='px-3'>|</span>
-        <a href='#songs'>
-          <Heading text='Songs' style='h3' />
+        <a href='#singles'>
+          <Heading text='Singles' style='h3' />
         </a>
         <span className='px-3'>|</span>
         <a href='#streaming-services'>
@@ -72,6 +72,34 @@ export default function Home() {
         text='The Cybergenix Conspiracy EP - April 26'
         style='h2'
       />
+
+      <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-1 lg:grid-cols-2 lg:text-left'>
+        <SomePromo
+          logo='/youtube.svg'
+          heading='YouTube'
+          body='Watch the music videos for the full story'
+          link='https://www.youtube.com/watch?v=lriT9Y8kqTg&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=1'
+        />
+        <SomePromo
+          logo='/spotify.svg'
+          heading='Spotify'
+          body='Stream the EP'
+          link='https://open.spotify.com/album/1U3Z3BgAIBxUi39Fo6R0A7?si=_1loYBKGTVyGZ6iXxeHCag'
+        />
+        <SomePromo
+          logo='/bandcamp.svg'
+          heading='Bandcamp'
+          body='Stream or buy the songs for download'
+          link='https://osirisdreams.bandcamp.com/album/the-cybergenix-conspiracy'
+        />
+        <SomePromo
+          logo='/apple-music.svg'
+          heading='Apple Music'
+          body='Buy or stream the songs'
+          link='https://music.apple.com/us/album/the-cybergenix-conspiracy-ep/1740412260'
+        />
+      </div>
+
       <div>
         <Countdown
           date={'2024-04-26T10:00:00Z'}
@@ -79,7 +107,7 @@ export default function Home() {
         ></Countdown>
       </div>
 
-      <Heading id='songs' text='Songs' style='h2' />
+      <Heading id='singles' text='Singles' style='h2' />
 
       <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-1 lg:grid-cols-2 lg:text-left'>
         <SongPromo
