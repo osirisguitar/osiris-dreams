@@ -53,10 +53,10 @@ export default function Bio() {
             components in the compositions.
           </p>
           <blockquote className='italic m-4'>
-            "I remember walking to the subway in the dark after a late night at
-            work, with the soundtrack from Tron Legacy playing on my headphones.
-            That was the most epic commute I've ever had. This is what I want to
-            achieve."
+            &quot;I remember walking to the subway in the dark after a late
+            night at work, with the soundtrack from Tron Legacy playing on my
+            headphones. That was the most epic commute I&apos;ve ever had. This
+            is what I want to achieve.&quot;
           </blockquote>
           <p>
             The cinematic experience is closely tied to strong visuals.
@@ -67,9 +67,9 @@ export default function Bio() {
             each of the four songs tell the story of the movie.
           </p>
           <blockquote className='italic m-4'>
-            "The songs are all made to stand on their own, but I think the right
-            music video can definitely take the experience of them a level
-            further."
+            &quot;The songs are all made to stand on their own, but I think the
+            right music video can definitely take the experience of them a level
+            further.&quot;
           </blockquote>
           <p>
             Anders lives in an 18th century house right outside of Stockholm
