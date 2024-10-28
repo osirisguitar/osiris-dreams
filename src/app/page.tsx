@@ -38,25 +38,8 @@ export default function Home() {
   }
 
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between'>
-      <div className='lg:pt-4 flex-row hidden md:flex'>
-        <a href='#promo'>
-          <Heading text='EPs' style='h3' />
-        </a>
-        <span className='px-3'>|</span>
-        <a href='#singles'>
-          <Heading text='Singles' style='h3' />
-        </a>
-        <span className='px-3'>|</span>
-        <a href='#streaming-services'>
-          <Heading text='Streaming Services' style='h3' />
-        </a>
-        <span className='px-3'>|</span>
-        <a href='#contact'>
-          <Heading text='Contact' style='h3' />
-        </a>
-      </div>
-      <div className='max-w-5xl items-center justify-between font-mono text-sm lg:flex lg:pt-20'>
+    <>
+      <div className='max-w-5xl items-center justify-between font-mono text-sm lg:flex lg:pt-5'>
         <Image
           src='/osiris-dreams-logo.svg'
           alt='OSIRIS DREAMS'
@@ -67,11 +50,19 @@ export default function Home() {
           priority
         />
       </div>
-      <Heading
-        id='promo'
-        text='The Cybergenix Conspiracy EP - April 26'
-        style='h2'
-      />
+      <div className='relative w-[90%] h-[400px] max-w-[600px] max-h-[300px] md:max-h-[400px] overflow-hidden'>
+        <iframe
+          src='https://www.youtube.com/embed/TIAroPUxSgg?si=uxq40QgKw0j7969M'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          referrerPolicy='strict-origin-when-cross-origin'
+          allowFullScreen
+          className='absolute top-0 bottom-0 right-0 left-0 w-[100%] h-[100%]'
+        ></iframe>
+      </div>
+
+      <Heading id='music' text='Music' style='h1' />
+
+      <Heading id='promo' text='The Cybergenix Conspiracy EP' style='h2' />
 
       <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-1 lg:grid-cols-2 lg:text-left'>
         <SomePromo
@@ -111,6 +102,11 @@ export default function Home() {
 
       <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-1 lg:grid-cols-2 lg:text-left'>
         <SongPromo
+          name='Hyper-Dimensional Racing'
+          albumCover='/hyperdimensional-album-cover.png'
+          link='https://songwhip.com/osirisdreams/hyperdimensional-racing'
+        ></SongPromo>
+        <SongPromo
           name='Driving Alone'
           albumCover='/driving-alone.png'
           link='https://songwhip.com/osirisdreams/driving-alone'
@@ -137,7 +133,7 @@ export default function Home() {
         ></SongPromo>
       </div>
 
-      <Heading id='streaming-services' text='Streaming Services' style='h2' />
+      <Heading id='streaming-services' text='Streaming Services' style='h1' />
       <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-2 lg:grid-cols-3 lg:text-left'>
         <SomePromo
           logo='/bandcamp.svg'
@@ -176,8 +172,8 @@ export default function Home() {
           link='https://music.apple.com/us/artist/osiris-dreams/1656218279'
         />
       </div>
-      <Heading id='contact' text='Contact' style='h2' />
-      <div className='font-mono mt-8 mb-10'>
+      <Heading id='contact' text='Contact' style='h1' />
+      <div className='font-mono mt-3 mb-10'>
         Email:{' '}
         <a href='mailto:osiris@osirisdreams.com'>osiris@osirisdreams.com</a>
         <br />
@@ -186,6 +182,6 @@ export default function Home() {
           @osiris@mastodon.nu
         </a>
       </div>
-    </main>
+    </>
   )
 }

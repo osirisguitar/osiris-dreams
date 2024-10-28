@@ -17,14 +17,14 @@ export const Heading = ({
 
   switch (style) {
     case 'h1':
-      classFront += ' py-4 px-3 text-4xl md:text-5xl text-[#992393] '
-      classBack += ' py-4 px-3 text-4xl md:text-5xl text-[#F515AC] top-[-5px]'
-      classWrapper += ' lg:mt-10 sm:mt-0'
+      classFront += ' py-4 px-3 text-3xl md:text-4xl text-[#992393] '
+      classBack += ' py-4 px-3 text-3xl md:text-4xl text-[#F515AC] top-[-5px]'
+      classWrapper += ' lg:mt-5 sm:mt-0'
       break
     case 'h2':
-      classFront += ' px-3 text-2xl text-blue-900 '
-      classBack += ' px-3 text-2xl text-blue-400 '
-      classWrapper += ' lg:mt-10 sm:mt-0'
+      classFront += ' px-3 text-xl md:text-2xl text-blue-900 '
+      classBack += ' px-3 text-xl md:text-2xl text-blue-400 '
+      classWrapper += ' lg:mt-3 sm:mt-0'
       break
     case 'h3':
       classFront += ' text-xs md:text-base text-blue-900 '
