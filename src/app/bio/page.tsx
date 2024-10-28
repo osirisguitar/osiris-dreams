@@ -17,7 +17,7 @@ export default function Bio() {
         <Image
           src='/osiris-dreams-logo.svg'
           alt='OSIRIS DREAMS'
-          className='drop-shadow-sm p-3'
+          className='drop-shadow-sm p-3 pt-[65px] md:pt-3'
           style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
           width={500}
           height={200}

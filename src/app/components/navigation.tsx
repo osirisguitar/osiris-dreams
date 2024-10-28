@@ -31,7 +31,7 @@ export const Navigation = () => {
           <Hamburger onToggle={() => setMenuOpen(!menuOpen)} />
         </div>
         {menuOpen && (
-          <div className='text-6xl absolute z-10 top-0 w-[300px] pt-12 flex flex-col space-y-2 rounded-lg px-5 py-4 m-3 border-4 border-[#F515AC] outline outline-4 outline-[#5EC4FF] bg-black bg-opacity-60 font-mono'>
+          <div className='text-6xl absolute z-10 top-0 w-[300px] flex flex-col space-y-2 rounded-lg px-5 py-4 m-3 border-4 border-[#F515AC] outline outline-4 outline-[#5EC4FF] bg-black bg-opacity-60 font-mono'>
             <a href='/#music'>
               <Heading text='Music' style='h3' />
             </a>
