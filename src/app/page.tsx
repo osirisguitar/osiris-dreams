@@ -50,9 +50,10 @@ export default function Home() {
           priority
         />
       </div>
+      <Heading id='promo' text='Dark City - Release Date Nov 8' style='h2' />
       <div className='relative w-[90%] h-[400px] max-w-[600px] max-h-[300px] md:max-h-[400px] overflow-hidden'>
         <iframe
-          src='https://www.youtube.com/embed/TIAroPUxSgg?si=uxq40QgKw0j7969M'
+          src='https://www.youtube.com/embed/l1AnzXH9Qak'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           referrerPolicy='strict-origin-when-cross-origin'
           allowFullScreen
