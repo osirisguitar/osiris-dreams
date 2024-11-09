@@ -33,6 +33,10 @@ export const Navigation = () => {
         <a href='/bio'>
           <Heading text='Bio' style='h3' />
         </a>
+        <span className='px-3'>|</span>
+        <a href='/images'>
+          <Heading text='Images' style='h3' />
+        </a>
       </div>
       <div className='absolute top-0 right-0 flex flex-col items-end'>
         <div className='mt-4 mr-4 z-20 md:hidden'>
@@ -54,6 +58,9 @@ export const Navigation = () => {
             </a>
             <a href='/bio' onClick={closeMenu}>
               <Heading text='Bio' style='h3' />
+            </a>
+            <a href='/images' onClick={closeMenu}>
+              <Heading text='Images' style='h3' />
             </a>
           </div>
         )}

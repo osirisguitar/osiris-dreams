@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { Heading } from '../components/heading'
 import { init } from '@socialgouv/matomo-next'
 import { useEffect } from 'react'
-import Countdown, { zeroPad } from 'react-countdown'
 import { TextBox } from '../components/textBox'
 
 export default function Bio() {
@@ -14,14 +13,16 @@ export default function Bio() {
   return (
     <>
       <div className='max-w-5xl items-center justify-between font-mono text-sm lg:flex'>
-        <Image
-          src='/osiris-dreams-logo.svg'
-          alt='OSIRIS DREAMS'
-          className='drop-shadow-sm p-3 pt-[65px] md:pt-3'
-          style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
-          width={500}
-          height={200}
-        />
+        <a href='/'>
+          <Image
+            src='/osiris-dreams-logo.svg'
+            alt='OSIRIS DREAMS'
+            className='drop-shadow-sm p-3 pt-[65px] md:pt-3'
+            style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
+            width={500}
+            height={200}
+          />
+        </a>
       </div>
 
       <div className='max-w-5xl'>

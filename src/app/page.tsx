@@ -40,15 +40,17 @@ export default function Home() {
   return (
     <>
       <div className='max-w-5xl items-center justify-between font-mono text-sm lg:flex lg:pt-5'>
-        <Image
-          src='/osiris-dreams-logo.svg'
-          alt='OSIRIS DREAMS'
-          className='drop-shadow-sm p-3  pt-[65px] md:pt-3'
-          style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
-          width={500}
-          height={350}
-          priority
-        />
+        <a href='/'>
+          <Image
+            src='/osiris-dreams-logo.svg'
+            alt='OSIRIS DREAMS'
+            className='drop-shadow-sm p-3  pt-[65px] md:pt-3'
+            style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
+            width={500}
+            height={350}
+            priority
+          />
+        </a>
       </div>
       <Heading id='promo' text='Dark City - Release Date Nov 8' style='h2' />
       <div className='relative w-[90%] h-[400px] max-w-[600px] max-h-[300px] md:max-h-[400px] overflow-hidden'>
