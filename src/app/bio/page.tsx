@@ -25,8 +25,16 @@ export default function Bio() {
       </div>
 
       <div className='max-w-5xl'>
-        <TextBox>
+        <TextBox display='block'>
           <Heading style='h1' text='Biography' />
+          <Image
+            src={'/osiris-dreams-anders-norrback-bornholm.jpg'}
+            alt='{name}'
+            className='float-left mr-5 mb-5'
+            priority
+            width={170}
+            height={170}
+          />
           <p>
             Under the name OSIRIS DREAMS Swede Anders Norrback Bornholm is
             creating cinematic synthwave inspired by the music heard in is
