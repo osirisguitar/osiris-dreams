@@ -29,12 +29,12 @@ export default function Images() {
         All rights reservered <a href='/#contact'>Anders Norrback Bornholm</a>.
         All use of assets must be approved.
       </div>
-      <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-1 lg:grid-cols-2 lg:text-left'>
+      <div className='mb-8 pb-8 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-1 lg:grid-cols-2 lg:text-left'>
         <TextBox>
           <a href='/dark-city-album-cover.png' target='_blank'>
             <Image
               src='/dark-city-album-cover.png'
-              alt='OSIRIS DREAMS - Dark City'
+              alt='OSIRIS DREAMS - Dark City album cover'
               className='drop-shadow-sm p-3 md:pt-3'
               style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
               width={300}
@@ -47,7 +47,7 @@ export default function Images() {
           <a href='/hyper-dimensional-racing-album-cover.png' target='_blank'>
             <Image
               src='/hyper-dimensional-racing-album-cover.png'
-              alt='OSIRIS DREAMS - Hyper-Dimensional Racing'
+              alt='OSIRIS DREAMS - Hyper-Dimensional Racing album cover'
               className='drop-shadow-sm p-3 md:pt-3'
               style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
               width={300}
@@ -57,10 +57,23 @@ export default function Images() {
           Hyper-Dimensional Racing - album cover
         </TextBox>
         <TextBox>
+          <a href='/the-cybergenix-conspiracy-album-cover.png' target='_blank'>
+            <Image
+              src='/the-cybergenix-conspiracy-album-cover.png'
+              alt='OSIRIS DREAMS - The Cybergenix Conspiracy album cover'
+              className='drop-shadow-sm p-3 md:pt-3'
+              style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
+              width={300}
+              height={300}
+            />
+          </a>
+          The Cybergenix Conspiracy - album cover
+        </TextBox>
+        <TextBox>
           <a href='/driving-alone-album-cover.png' target='_blank'>
             <Image
               src='/driving-alone-album-cover.png'
-              alt='OSIRIS DREAMS - Driving Alone'
+              alt='OSIRIS DREAMS - Driving Alone album cover'
               className='drop-shadow-sm p-3 md:pt-3'
               style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
               width={300}
@@ -73,20 +86,20 @@ export default function Images() {
           <a href='/skiing-on-the-moon-album-cover.png' target='_blank'>
             <Image
               src='/skiing-on-the-moon-album-cover.png'
-              alt='OSIRIS DREAMS - Hyper-Dimensional Racing'
+              alt='OSIRIS DREAMS - Skiing on the Moon album cover'
               className='drop-shadow-sm p-3 md:pt-3'
               style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
               width={300}
               height={300}
             />
           </a>
-          Hyper-Dimensional Racing - album cover
+          Skiing on the Moon - album cover
         </TextBox>
         <TextBox>
           <a href='/3-am-6502-debugging-album-cover.png' target='_blank'>
             <Image
               src='/3-am-6502-debugging-album-cover.png'
-              alt='OSIRIS DREAMS - Driving Alone'
+              alt='OSIRIS DREAMS - 3 AM 6502 Debugging album cover'
               className='drop-shadow-sm p-3 md:pt-3'
               style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
               width={300}
@@ -99,7 +112,7 @@ export default function Images() {
           <a href='/light-cycle-arena-album-cover.png' target='_blank'>
             <Image
               src='/light-cycle-arena-album-cover.png'
-              alt='OSIRIS DREAMS - Hyper-Dimensional Racing'
+              alt='OSIRIS DREAMS - Light Cycle Arena album cover'
               className='drop-shadow-sm p-3 md:pt-3'
               style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
               width={300}
@@ -112,7 +125,7 @@ export default function Images() {
           <a href='/hyperspace-sunday-cruise-album-cover.png' target='_blank'>
             <Image
               src='/hyperspace-sunday-cruise-album-cover.png'
-              alt='OSIRIS DREAMS - Driving Alone'
+              alt='OSIRIS DREAMS - Hyperspace Sunday Cruise album cover'
               className='drop-shadow-sm p-3 md:pt-3'
               style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
               width={300}
@@ -122,17 +135,17 @@ export default function Images() {
           Hyperspace Sunday Cruise - album cover
         </TextBox>
         <TextBox>
-          <a href='/the-cybergenix-conspiracy-album-cover.png' target='_blank'>
+          <a href='/osiris-dreams-anders-norrback-bornholm.jpg' target='_blank'>
             <Image
-              src='/the-cybergenix-conspiracy-album-cover.png'
-              alt='OSIRIS DREAMS - Hyper-Dimensional Racing'
+              src='/osiris-dreams-anders-norrback-bornholm.jpg'
+              alt='OSIRIS DREAMS - Anders Norrback Bornholm photo'
               className='drop-shadow-sm p-3 md:pt-3'
               style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
               width={300}
               height={300}
             />
           </a>
-          The Cybergenix Conspiracy - album cover
+          OSIRIS DREAMS / Anders Norrback Bornholm
         </TextBox>
       </div>
     </>
