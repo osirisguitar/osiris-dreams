@@ -2,6 +2,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Navigation } from './components/navigation'
+import { Suspense } from 'react'
+import { FacebookPixelEvents } from './components/facebookPixelEvents'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -34,6 +36,9 @@ export default function RootLayout({
           <Navigation />
           {children}
         </main>
+        <Suspense fallback={null}>
+          <FacebookPixelEvents />
+        </Suspense>
       </body>
     </html>
   )
