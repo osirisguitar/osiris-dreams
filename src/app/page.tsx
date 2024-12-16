@@ -65,7 +65,7 @@ export default function Home() {
       <SongPromo
         name='Dark City'
         albumCover='/dark-city-album-cover.png'
-        link='https://songwhip.com/osirisdreams/dark-city'
+        link='https://fanlink.tv/wchp'
       ></SongPromo>
 
       <Heading id='music' text='Music' style='h1' />
