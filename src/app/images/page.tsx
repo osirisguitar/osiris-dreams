@@ -135,6 +135,19 @@ export default function Images() {
           Hyperspace Sunday Cruise - album cover
         </TextBox>
         <TextBox>
+          <a href='/osiris-dreams-lockscreen.png' target='_blank'>
+            <Image
+              src='/osiris-dreams-lockscreen.png'
+              alt='Hyper-dimensional Racing lock screen for iPhone'
+              className='drop-shadow-sm p-3 md:pt-3'
+              style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
+              width={300}
+              height={300}
+            />
+          </a>
+          Hyper-dimensional Racing lock screen for iPhone
+        </TextBox>
+        <TextBox>
           <a href='/osiris-dreams-anders-norrback-bornholm.jpg' target='_blank'>
             <Image
               src='/osiris-dreams-anders-norrback-bornholm.jpg'
