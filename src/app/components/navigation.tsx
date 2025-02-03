@@ -18,12 +18,20 @@ export const Navigation = () => {
           <Heading text='Home' style='h3' />
         </a>
         <span className='px-3'>|</span>
-        <a href='/#music'>
+        <a href='/#songs-albums'>
           <Heading text='Music' style='h3' />
         </a>
         <span className='px-3'>|</span>
-        <a href='/#streaming-services'>
-          <Heading text='Streaming Services' style='h3' />
+        <a href='/#stream'>
+          <Heading text='Stream' style='h3' />
+        </a>
+        <span className='px-3'>|</span>
+        <a href='/#buy'>
+          <Heading text='Buy' style='h3' />
+        </a>
+        <span className='px-3'>|</span>
+        <a href='/#social-media'>
+          <Heading text='Social Media' style='h3' />
         </a>
         <span className='px-3'>|</span>
         <a href='/#contact'>
