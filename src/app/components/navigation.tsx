@@ -55,11 +55,17 @@ export const Navigation = () => {
             <a href='/' onClick={closeMenu}>
               <Heading text='Home' style='h3' />
             </a>
-            <a href='/#music' onClick={closeMenu}>
+            <a href='/#songs-albums' onClick={closeMenu}>
               <Heading text='Music' style='h3' />
             </a>
-            <a href='/#streaming-services' onClick={closeMenu}>
+            <a href='/#stream' onClick={closeMenu}>
               <Heading text='Streaming Services' style='h3' />
+            </a>
+            <a href='/#buy' onClick={closeMenu}>
+              <Heading text='Music Stores' style='h3' />
+            </a>
+            <a href='/#social-media' onClick={closeMenu}>
+              <Heading text='Social Media' style='h3' />
             </a>
             <a href='/#contact' onClick={closeMenu}>
               <Heading text='Contact' style='h3' />
