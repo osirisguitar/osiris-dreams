@@ -1,7 +1,11 @@
 import { SongLandingPage } from '@/app/components/songLandingPage'
 import { songsAndAlbums } from '@/app/data/songsAndAlbums'
 
-export default async function Page({ params }: { params: { song: string } }) {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ song: string }>
+}) {
   const { song } = await params
   const services = songsAndAlbums[song]
 
