@@ -25,7 +25,7 @@ export default async function RootLayout({
     <html lang='en'>
       <head></head>
       <body className={inter.className}>
-        {!path?.startsWith('/songs/') && (
+        {!path?.startsWith('/songs') && (
           <video
             playsInline
             autoPlay
@@ -38,7 +38,7 @@ export default async function RootLayout({
           </video>
         )}
         <main className='flex min-h-screen flex-col items-center'>
-          {!path?.startsWith('/songs/') && <Navigation />}
+          {!path?.startsWith('/songs') && <Navigation />}
           {children}
         </main>
         <Suspense fallback={null}>

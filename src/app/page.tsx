@@ -6,6 +6,7 @@ import { Heading } from './components/heading'
 import { init } from '@socialgouv/matomo-next'
 import { useEffect } from 'react'
 import Countdown, { zeroPad } from 'react-countdown'
+import { songsAndAlbums } from './data/songsAndAlbums'
 
 export default function Home() {
   useEffect(() => {
@@ -70,46 +71,17 @@ export default function Home() {
       <Heading id='songs-albums' text='Songs and Albums' style='h1' />
 
       <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:text-left'>
-        <SongPromo
-          name='Dark City'
-          albumCover='/dark-city-album-cover.png'
-          link='https://songwhip.com/osirisdreams/dark-city'
-        ></SongPromo>
-        <SongPromo
-          name='Hyper-Dimensional Racing'
-          albumCover='/hyper-dimensional-racing-album-cover.png'
-          link='https://songwhip.com/osirisdreams/hyperdimensional-racing'
-        ></SongPromo>
-        <SongPromo
-          name='The Cybergenix Conspiracy EP'
-          albumCover='/the-cybergenix-conspiracy-album-cover.png'
-          link='https://songwhip.com/osirisdreams/the-cybergenix-conspiracy'
-        ></SongPromo>
-        <SongPromo
-          name='Driving Alone'
-          albumCover='/driving-alone-album-cover.png'
-          link='https://songwhip.com/osirisdreams/driving-alone'
-        ></SongPromo>
-        <SongPromo
-          name='Skiing on the Moon'
-          albumCover='/skiing-on-the-moon-album-cover.png'
-          link='https://songwhip.com/osirisdreams/skiing-on-the-moon'
-        ></SongPromo>
-        <SongPromo
-          name='3 AM 6502 Debugging'
-          albumCover='/3-am-6502-debugging-album-cover.png'
-          link='https://songwhip.com/osirisdreams/3-am-6502-debugging'
-        ></SongPromo>
-        <SongPromo
-          name='Light Cycle Arena'
-          albumCover='/light-cycle-arena-album-cover.png'
-          link='https://songwhip.com/osirisdreams/light-cycle-arena'
-        ></SongPromo>
-        <SongPromo
-          name='Hyperspace Sunday Cruise'
-          albumCover='/hyperspace-sunday-cruise-album-cover.png'
-          link='https://songwhip.com/osirisdreams/hyperspace-sunday-cruise'
-        ></SongPromo>
+        {songsAndAlbums &&
+          Object.keys(songsAndAlbums).map((songName) => {
+            return (
+              <SongPromo
+                key={songName}
+                name={songName}
+                albumCover={`/${songName}-album-cover.png`}
+                link={`/songs/${songName}`}
+              ></SongPromo>
+            )
+          })}
       </div>
 
       <Heading id='stream' text='Streaming Services' style='h1' />
@@ -148,13 +120,13 @@ export default function Home() {
           logo='/bandcamp-icon.svg'
           heading='Bandcamp'
           body='Buy DRM-free songs for download'
-          link='https://osirisdreams.bandcamp.com/album/the-cybergenix-conspiracy'
+          link='https://osirisdreams.bandcamp.com/'
         />
         <SomePromo
           logo='/applemusic-icon.svg'
           heading='Apple Music'
           body='Buy songs'
-          link='https://open.audio/channels/osirisdreams'
+          link='https://music.apple.com/artist/osiris-dreams/1656218279?app=itunes'
         />
       </div>
 

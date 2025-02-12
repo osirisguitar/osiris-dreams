@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image'
-import { push } from '@socialgouv/matomo-next'
+import { init, push } from '@socialgouv/matomo-next'
+import { useEffect } from 'react'
 
 export const SongLandingPage = ({
   name,
@@ -10,6 +12,10 @@ export const SongLandingPage = ({
   coverImage: string
   services: Record<string, { url: string; linkText: string }>
 }) => {
+  useEffect(() => {
+    init({ url: 'https://matomo.bornholm.se/', siteId: '2' })
+  }, [])
+
   const streamingClass =
     'group rounded-lg m-auto mb-4 border-4 border-[#F515AC] outline outline-4 outline-[#5EC4FF] bg-black bg-opacity-60 font-mono'
 
@@ -58,7 +64,13 @@ export const SongLandingPage = ({
                 maxWidth: '90vw',
               }}
             >
-              <a href={services[serviceName].url} target='_blank'>
+              <a
+                href={services[serviceName].url}
+                target='_blank'
+                onClick={() => {
+                  push(['trackEvent', 'song', name, serviceName])
+                }}
+              >
                 <div
                   className='flex items-center p-2'
                   style={{
