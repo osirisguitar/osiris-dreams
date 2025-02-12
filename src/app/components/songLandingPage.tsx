@@ -1,7 +1,8 @@
 'use client'
 import Image from 'next/image'
 import { init, push } from '@socialgouv/matomo-next'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import ReactPixel from 'react-facebook-pixel'
 
 export const SongLandingPage = ({
   name,
@@ -12,9 +13,30 @@ export const SongLandingPage = ({
   coverImage: string
   services: Record<string, { url: string; linkText: string }>
 }) => {
+  const [clickedService, setClickedService] = useState<string | null>(null)
+
   useEffect(() => {
     init({ url: 'https://matomo.bornholm.se/', siteId: '2' })
   }, [])
+
+  useEffect(() => {
+    if (clickedService) {
+      push(['trackEvent', 'song', name, clickedService])
+      import('react-facebook-pixel')
+        .then((x) => x.default)
+        .then((ReactPixel) => {
+          ReactPixel.init('1618294722414496')
+          ReactPixel.trackCustom('StreamSong', {
+            song: name,
+            service: clickedService,
+          })
+        })
+    }
+  }, [name, clickedService])
+
+  const trackStreaming = (serviceName: string) => {
+    setClickedService(serviceName)
+  }
 
   const streamingClass =
     'group rounded-lg m-auto mb-4 border-4 border-[#F515AC] outline outline-4 outline-[#5EC4FF] bg-black bg-opacity-60 font-mono'
@@ -68,7 +90,7 @@ export const SongLandingPage = ({
                 href={services[serviceName].url}
                 target='_blank'
                 onClick={() => {
-                  push(['trackEvent', 'song', name, serviceName])
+                  trackStreaming(serviceName)
                 }}
               >
                 <div
