@@ -26,6 +26,7 @@ export const SongLandingPage = ({
         .then((x) => x.default)
         .then((ReactPixel) => {
           ReactPixel.init('1618294722414496')
+          console.log('fbq', name, clickedService)
           ReactPixel.trackCustom('StreamSong', {
             song: name,
             service: clickedService,
@@ -63,7 +64,7 @@ export const SongLandingPage = ({
           marginLeft: 'auto',
           marginRight: 'auto',
           marginTop: '10%',
-          width: '500px',
+          maxWidth: '500px',
           padding: 0,
         }}
       >

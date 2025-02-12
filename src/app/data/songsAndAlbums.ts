@@ -14,7 +14,7 @@ export const songsAndAlbums: Record<string, Record<string, Song>> = {
       linkText: 'Buy or stream on BandCamp >',
     },
     applemusic: {
-      url: 'https://osirisdreams.bandcamp.com/track/dark-city',
+      url: 'https://music.apple.com/se/album/dark-city-single/1776912551?app=music',
       linkText: 'Buy or stream on Apple Music >',
     },
     youtube: {
@@ -40,7 +40,7 @@ export const songsAndAlbums: Record<string, Record<string, Song>> = {
       linkText: 'Buy or stream on BandCamp >',
     },
     applemusic: {
-      url: 'https://music.apple.com/se/album/hyper-dimensional-racing-single/1762564284?app=itunes',
+      url: 'https://music.apple.com/se/album/hyper-dimensional-racing-single/1762564284?app=music',
       linkText: 'Buy or stream on Apple Music >',
     },
     youtube: {
@@ -66,7 +66,7 @@ export const songsAndAlbums: Record<string, Record<string, Song>> = {
       linkText: 'Buy or stream on BandCamp >',
     },
     applemusic: {
-      url: 'https://music.apple.com/se/album/driving-alone/1661704156?app=itunes',
+      url: 'https://music.apple.com/se/album/driving-alone/1661704156?app=music',
       linkText: 'Buy or stream on Apple Music >',
     },
     youtube: {
@@ -92,7 +92,7 @@ export const songsAndAlbums: Record<string, Record<string, Song>> = {
       linkText: 'Buy or stream on BandCamp >',
     },
     applemusic: {
-      url: 'https://music.apple.com/album/the-cybergenix-conspiracy-ep/1740412260?app=itunes',
+      url: 'https://music.apple.com/album/the-cybergenix-conspiracy-ep/1740412260?app=music',
       linkText: 'Buy or stream on Apple Music >',
     },
     youtube: {
@@ -118,7 +118,7 @@ export const songsAndAlbums: Record<string, Record<string, Song>> = {
       linkText: 'Buy or stream on BandCamp >',
     },
     applemusic: {
-      url: 'https://music.apple.com/album/skiing-on-the-moon-single/1665397557?app=itunes',
+      url: 'https://music.apple.com/album/skiing-on-the-moon-single/1665397557?app=music',
       linkText: 'Buy or stream on Apple Music >',
     },
     youtube: {
@@ -144,7 +144,7 @@ export const songsAndAlbums: Record<string, Record<string, Song>> = {
       linkText: 'Buy or stream on BandCamp >',
     },
     applemusic: {
-      url: 'https://music.apple.com/se/album/3-am-6502-debugging-single/1700141452?app=itunes',
+      url: 'https://music.apple.com/se/album/3-am-6502-debugging-single/1700141452?app=music',
       linkText: 'Buy or stream on Apple Music >',
     },
     youtube: {
@@ -166,7 +166,7 @@ export const songsAndAlbums: Record<string, Record<string, Song>> = {
       linkText: 'Buy or stream on BandCamp >',
     },
     applemusic: {
-      url: 'https://music.apple.com/se/album/light-cycle-arena-single/1680362586?app=itunes',
+      url: 'https://music.apple.com/se/album/light-cycle-arena-single/1680362586?app=music',
       linkText: 'Buy or stream on Apple Music >',
     },
     youtube: {
