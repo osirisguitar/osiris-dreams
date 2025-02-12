@@ -116,19 +116,19 @@ export default function Home() {
 
       <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:text-left'>
         <SomePromo
-          logo='/youtube.svg'
+          logo='/youtube-icon.svg'
           heading='YouTube'
           body='Songs with music videos'
           link='https://www.youtube.com/watch?v=lriT9Y8kqTg&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=1'
         />
         <SomePromo
-          logo='/spotify.svg'
+          logo='/spotify-icon.svg'
           heading='Spotify'
           body='Song streaming'
           link='https://open.spotify.com/album/1U3Z3BgAIBxUi39Fo6R0A7?si=_1loYBKGTVyGZ6iXxeHCag'
         />
         <SomePromo
-          logo='/bandcamp.svg'
+          logo='/bandcamp-icon.svg'
           heading='Bandcamp'
           body='Free song streaming'
           link='https://osirisdreams.bandcamp.com/'
@@ -145,13 +145,13 @@ export default function Home() {
 
       <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:text-left'>
         <SomePromo
-          logo='/bandcamp.svg'
+          logo='/bandcamp-icon.svg'
           heading='Bandcamp'
           body='Buy DRM-free songs for download'
           link='https://osirisdreams.bandcamp.com/album/the-cybergenix-conspiracy'
         />
         <SomePromo
-          logo='/apple-music.svg'
+          logo='/applemusic-icon.svg'
           heading='Apple Music'
           body='Buy songs'
           link='https://open.audio/channels/osirisdreams'
@@ -161,19 +161,19 @@ export default function Home() {
       <Heading id='social-media' text='Social Media' style='h1' />
       <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-2 lg:grid-cols-4 lg:text-left'>
         <SomePromo
-          logo='/tiktok.svg'
+          logo='/tiktok-icon.svg'
           heading='TikTok'
           body='You can use my songs in your videos'
           link='https://www.tiktok.com/@osiris.dreams'
         />
         <SomePromo
-          logo='/instagram.svg'
+          logo='/instagram-icon.svg'
           heading='Instagram'
           body='You can use my songs in your videos'
           link='https://instagram.com/osirisdreams'
         />
         <SomePromo
-          logo='/instagram.svg'
+          logo='/instagram-icon.svg'
           heading='Threads'
           body="Let's talk!"
           link='https://threads.net/osirisdreams'
