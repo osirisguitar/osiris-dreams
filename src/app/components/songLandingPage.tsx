@@ -29,7 +29,7 @@ export const SongLandingPage = ({
           console.log('fbq', name, clickedService)
           ReactPixel.trackCustom('ViewContent', {
             content_name: name,
-            content_type: clickedService,
+            content_category: clickedService,
           })
         })
 
@@ -69,7 +69,7 @@ export const SongLandingPage = ({
       }
       anyWindow.fbq('track', 'StreamSong2', {
         content_name: name,
-        content_type: clickedService,
+        content_category: clickedService,
       })
     }
   }, [name, clickedService])
