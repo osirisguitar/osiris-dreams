@@ -92,6 +92,7 @@ export const songsAndAlbums: Record<string, Song> = {
     },
   },
   'driving-alone': {
+    id: 'driving-alone',
     name: 'Driving Alone',
     services: {
       spotify: {
