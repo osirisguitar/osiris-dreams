@@ -4,6 +4,28 @@ export interface Song {
 }
 
 export const songsAndAlbums: Record<string, Record<string, Song>> = {
+  'the-encounter': {
+    spotify: {
+      url: 'https://open.spotify.com/track/6kpSuUS7qEngZwcGxwgwLu',
+      linkText: 'Stream on Spotify >',
+    },
+    bandcamp: {
+      url: 'https://osirisdreams.bandcamp.com/track/the-encounter',
+      linkText: 'Buy or stream on BandCamp >',
+    },
+    youtube: {
+      url: 'https://www.youtube.com/watch?v=YPP2mC0I_l8',
+      linkText: 'Music video on YouTube >',
+    },
+    applemusic: {
+      url: 'https://music.apple.com/se/album/the-encounter-single/1795008798?app=music',
+      linkText: 'Buy or stream on Apple Music >',
+    },
+    'youtube-music': {
+      url: 'https://music.youtube.com/watch?v=YPP2mC0I_l8',
+      linkText: 'Stream on YouTube Music >',
+    },
+  },
   'dark-city': {
     spotify: {
       url: 'https://open.spotify.com/track/2OE4Iow5JK5hC2cfffxX7x',
@@ -13,13 +35,13 @@ export const songsAndAlbums: Record<string, Record<string, Song>> = {
       url: 'https://osirisdreams.bandcamp.com/track/dark-city',
       linkText: 'Buy or stream on BandCamp >',
     },
+    youtube: {
+      url: 'https://www.youtube.com/watch?v=4_MB1zDAck0',
+      linkText: 'Music video on YouTube >',
+    },
     applemusic: {
       url: 'https://music.apple.com/se/album/dark-city-single/1776912551?app=music',
       linkText: 'Buy or stream on Apple Music >',
-    },
-    youtube: {
-      url: 'https://www.youtube.com/watch?v=4_MB1zDAck0',
-      linkText: 'Stream on YouTube >',
     },
     'youtube-music': {
       url: 'https://music.youtube.com/browse/MPREb_gCJFr3olfnv',
@@ -39,13 +61,13 @@ export const songsAndAlbums: Record<string, Record<string, Song>> = {
       url: 'https://osirisdreams.bandcamp.com/track/hyper-dimensional-racing',
       linkText: 'Buy or stream on BandCamp >',
     },
-    applemusic: {
-      url: 'https://music.apple.com/se/album/hyper-dimensional-racing-single/1762564284?app=music',
-      linkText: 'Buy or stream on Apple Music >',
-    },
     youtube: {
       url: 'https://www.youtube.com/watch?v=TIAroPUxSgg',
       linkText: 'Stream on YouTube >',
+    },
+    applemusic: {
+      url: 'https://music.apple.com/se/album/hyper-dimensional-racing-single/1762564284?app=music',
+      linkText: 'Buy or stream on Apple Music >',
     },
     'youtube-music': {
       url: 'https://music.youtube.com/browse/MPREb_rUZgNndEnrW',

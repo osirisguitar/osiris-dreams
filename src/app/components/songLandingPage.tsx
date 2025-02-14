@@ -67,7 +67,7 @@ export const SongLandingPage = ({
         // Initialize Facebook Pixel
         anyWindow.fbq('init', '1618294722414496')
       }
-      anyWindow.fbq('track', 'StreamSong2', {
+      anyWindow.fbq('track', 'StreamSong', {
         content_name: name,
         content_category: clickedService,
       })

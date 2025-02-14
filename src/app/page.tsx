@@ -53,35 +53,31 @@ export default function Home() {
           />
         </a>
       </div>
-      <Heading id='news' text='The Encounter - February 14th' style='h1' />
+      <Heading id='news' text='The Encounter - out now!' style='h1' />
       <div className='mb-4 text-center max-w-[300px]'>
         <SongPromo
-          name='The Encounter'
+          name='the-encounter'
           albumCover='/the-encounter-album-cover.png'
-          link='https://distrokid.com/hyperfollow/osirisdreams/the-encounter'
+          link='/songs/the-encounter'
         ></SongPromo>
-      </div>
-      <div>
-        <Countdown
-          date={'2025-02-14T10:00:00Z'}
-          renderer={renderer}
-        ></Countdown>
       </div>
 
       <Heading id='songs-albums' text='Songs and Albums' style='h1' />
 
       <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:text-left'>
         {songsAndAlbums &&
-          Object.keys(songsAndAlbums).map((songName) => {
-            return (
-              <SongPromo
-                key={songName}
-                name={songName}
-                albumCover={`/${songName}-album-cover.png`}
-                link={`/songs/${songName}`}
-              ></SongPromo>
-            )
-          })}
+          Object.keys(songsAndAlbums)
+            .slice(1)
+            .map((songName) => {
+              return (
+                <SongPromo
+                  key={songName}
+                  name={songName}
+                  albumCover={`/${songName}-album-cover.png`}
+                  link={`/songs/${songName}`}
+                ></SongPromo>
+              )
+            })}
       </div>
 
       <Heading id='stream' text='Streaming Services' style='h1' />
