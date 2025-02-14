@@ -2,17 +2,10 @@
 import Image from 'next/image'
 import { init, push } from '@socialgouv/matomo-next'
 import { useEffect, useState } from 'react'
-import ReactPixel from 'react-facebook-pixel'
+import { Song } from '../data/songsAndAlbums'
 
-export const SongLandingPage = ({
-  name,
-  coverImage,
-  services,
-}: {
-  name: string
-  coverImage: string
-  services: Record<string, { url: string; linkText: string }>
-}) => {
+export const SongLandingPage = ({ song }: { song: Song }) => {
+  const name = song.id
   const [clickedService, setClickedService] = useState<string | null>(null)
 
   useEffect(() => {
@@ -90,7 +83,7 @@ export const SongLandingPage = ({
           left: 0,
           right: 0,
           position: 'absolute',
-          backgroundImage: `url(${coverImage})`,
+          backgroundImage: `url(/${song.id}-album-cover.png)`,
           backgroundSize: 'cover',
           width: '100vw',
           height: '100vh',
@@ -108,14 +101,14 @@ export const SongLandingPage = ({
         }}
       >
         <Image
-          src={coverImage}
+          src={`/${song.id}-album-cover.png`}
           width='500'
           height='500'
           alt='Album cover'
           className={streamingClass}
           style={{ maxWidth: '90vw' }}
         ></Image>
-        {Object.keys(services).map((serviceName) => {
+        {Object.keys(song.services).map((serviceName) => {
           return (
             <div
               key={serviceName}
@@ -127,7 +120,7 @@ export const SongLandingPage = ({
               }}
             >
               <a
-                href={services[serviceName].url}
+                href={song.services[serviceName].url}
                 target='_blank'
                 onClick={() => {
                   trackStreaming(serviceName)
@@ -149,7 +142,7 @@ export const SongLandingPage = ({
                     priority
                   />
                   <h3 className={`px-3 text-xl font-semibold`}>
-                    {services[serviceName].linkText}
+                    {song.services[serviceName].linkText}
                   </h3>
                 </div>
               </a>
