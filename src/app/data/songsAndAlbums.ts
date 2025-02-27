@@ -44,7 +44,7 @@ export const songsAndAlbums: Record<string, Song> = {
         linkText: 'Buy or stream on BandCamp >',
       },
       youtube: {
-        url: 'https://www.youtube.com/watch?v=4_MB1zDAck0',
+        url: 'https://www.youtube.com/watch?v=su3j1V_50Wc',
         linkText: 'Music video on YouTube >',
       },
       applemusic: {
@@ -75,7 +75,7 @@ export const songsAndAlbums: Record<string, Song> = {
       },
       youtube: {
         url: 'https://www.youtube.com/watch?v=TIAroPUxSgg',
-        linkText: 'Stream on YouTube >',
+        linkText: 'Music video on YouTube >',
       },
       applemusic: {
         url: 'https://music.apple.com/se/album/hyper-dimensional-racing-single/1762564284?app=music',
@@ -139,7 +139,7 @@ export const songsAndAlbums: Record<string, Song> = {
       },
       youtube: {
         url: 'https://www.youtube.com/watch?v=lriT9Y8kqTg&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=1',
-        linkText: 'Stream on YouTube >',
+        linkText: 'Music videos on YouTube >',
       },
       'youtube-music': {
         url: 'https://music.youtube.com/playlist?list=OLAK5uy_njvdl0C8IQ1f4QbATtb8G1-Bx95EZkPcY',

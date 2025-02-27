@@ -1,6 +1,6 @@
 import { SongLandingPage } from '@/app/components/songLandingPage'
 import { songsAndAlbums } from '@/app/data/songsAndAlbums'
-import { Metadata, ResolvingMetadata } from 'next'
+import { Metadata } from 'next'
 
 export default async function Page({
   params,

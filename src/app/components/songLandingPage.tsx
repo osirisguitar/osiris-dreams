@@ -95,7 +95,7 @@ export const SongLandingPage = ({ song }: { song: Song }) => {
         style={{
           marginLeft: 'auto',
           marginRight: 'auto',
-          marginTop: '10%',
+          marginTop: '80px',
           maxWidth: '500px',
           padding: 0,
         }}
@@ -141,7 +141,7 @@ export const SongLandingPage = ({ song }: { song: Song }) => {
                     height={50}
                     priority
                   />
-                  <h3 className={`px-3 text-xl font-semibold`}>
+                  <h3 className={`px-3 text-l md:text-xl font-semibold`}>
                     {song.services[serviceName].linkText}
                   </h3>
                 </div>
