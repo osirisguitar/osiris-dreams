@@ -31,6 +31,19 @@ export default function Images() {
       </div>
       <div className='mb-8 pb-8 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-1 lg:grid-cols-2 lg:text-left'>
         <TextBox>
+          <a href='/the-encounter-album-cover.png' target='_blank'>
+            <Image
+              src='/the-encounter-album-cover.png'
+              alt='OSIRIS DREAMS - The Encounter album cover'
+              className='drop-shadow-sm p-3 md:pt-3'
+              style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
+              width={300}
+              height={300}
+            />
+          </a>
+          The Encounter - album cover
+        </TextBox>
+        <TextBox>
           <a href='/dark-city-album-cover.png' target='_blank'>
             <Image
               src='/dark-city-album-cover.png'
@@ -135,6 +148,19 @@ export default function Images() {
           Hyperspace Sunday Cruise - album cover
         </TextBox>
         <TextBox>
+          <a href='/osiris-dreams-anders-norrback-bornholm.jpg' target='_blank'>
+            <Image
+              src='/osiris-dreams-anders-norrback-bornholm.jpg'
+              alt='OSIRIS DREAMS - Anders Norrback Bornholm photo'
+              className='drop-shadow-sm p-3 md:pt-3'
+              style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
+              width={300}
+              height={300}
+            />
+          </a>
+          OSIRIS DREAMS / Anders Norrback Bornholm
+        </TextBox>
+        <TextBox>
           <a href='/osiris-dreams-lockscreen.png' target='_blank'>
             <Image
               src='/osiris-dreams-lockscreen.png'
@@ -148,17 +174,17 @@ export default function Images() {
           Hyper-dimensional Racing lock screen for iPhone
         </TextBox>
         <TextBox>
-          <a href='/osiris-dreams-anders-norrback-bornholm.jpg' target='_blank'>
+          <a href='/osiris-dreams-dark-city-lockscreen.png' target='_blank'>
             <Image
-              src='/osiris-dreams-anders-norrback-bornholm.jpg'
-              alt='OSIRIS DREAMS - Anders Norrback Bornholm photo'
+              src='/osiris-dreams-dark-city-lockscreen.png'
+              alt='Dark City lock screen for iPhone'
               className='drop-shadow-sm p-3 md:pt-3'
               style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
               width={300}
               height={300}
             />
           </a>
-          OSIRIS DREAMS / Anders Norrback Bornholm
+          Dark City lock screen for iPhone
         </TextBox>
       </div>
     </>

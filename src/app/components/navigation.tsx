@@ -18,7 +18,7 @@ export const Navigation = () => {
           <Heading text='Home' style='h3' />
         </a>
         <span className='px-3'>|</span>
-        <a href='/#songs-albums'>
+        <a href='/#news'>
           <Heading text='Music' style='h3' />
         </a>
         <span className='px-3'>|</span>
@@ -27,7 +27,7 @@ export const Navigation = () => {
         </a>
         <span className='px-3'>|</span>
         <a href='/#buy'>
-          <Heading text='Buy' style='h3' />
+          <Heading text='Buy songs' style='h3' />
         </a>
         <span className='px-3'>|</span>
         <a href='/#social-media'>
@@ -51,30 +51,30 @@ export const Navigation = () => {
           <Hamburger onToggle={() => setMenuOpen(!menuOpen)} />
         </div>
         {menuOpen && (
-          <div className='text-6xl absolute z-10 top-0 w-[300px] flex flex-col space-y-2 rounded-lg px-5 py-4 m-3 border-4 border-[#F515AC] outline outline-4 outline-[#5EC4FF] bg-black bg-opacity-60 font-mono'>
+          <div className='absolute z-10 top-0 w-[320px] flex flex-col space-y-2 rounded-lg px-5 py-4 m-3 border-4 border-[#F515AC] outline outline-4 outline-[#5EC4FF] bg-black bg-opacity-60 font-mono'>
             <a href='/' onClick={closeMenu}>
-              <Heading text='Home' style='h3' />
+              <Heading text='Home' style='h2' />
             </a>
-            <a href='/#songs-albums' onClick={closeMenu}>
-              <Heading text='Music' style='h3' />
+            <a href='/#news' onClick={closeMenu}>
+              <Heading text='Music' style='h2' />
             </a>
             <a href='/#stream' onClick={closeMenu}>
-              <Heading text='Streaming Services' style='h3' />
+              <Heading text='Stream' style='h2' />
             </a>
             <a href='/#buy' onClick={closeMenu}>
-              <Heading text='Music Stores' style='h3' />
+              <Heading text='Buy songs' style='h2' />
             </a>
             <a href='/#social-media' onClick={closeMenu}>
-              <Heading text='Social Media' style='h3' />
+              <Heading text='Social Media' style='h2' />
             </a>
             <a href='/#contact' onClick={closeMenu}>
-              <Heading text='Contact' style='h3' />
+              <Heading text='Contact' style='h2' />
             </a>
             <a href='/bio' onClick={closeMenu}>
-              <Heading text='Bio' style='h3' />
+              <Heading text='Bio' style='h2' />
             </a>
             <a href='/images' onClick={closeMenu}>
-              <Heading text='Images' style='h3' />
+              <Heading text='Images' style='h2' />
             </a>
           </div>
         )}
