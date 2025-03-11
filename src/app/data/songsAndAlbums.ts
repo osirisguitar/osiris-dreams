@@ -10,7 +10,7 @@ export const songsAndAlbums: Record<string, Song> = {
     name: 'The Encounter',
     services: {
       spotify: {
-        url: 'https://open.spotify.com/track/6kpSuUS7qEngZwcGxwgwLu',
+        url: 'https://open.spotify.com/track/6kpSuUS7qEngZwcGxwgwLu?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
         linkText: 'Stream on Spotify >',
       },
       bandcamp: {
@@ -36,7 +36,7 @@ export const songsAndAlbums: Record<string, Song> = {
     name: 'Dark City',
     services: {
       spotify: {
-        url: 'https://open.spotify.com/track/2OE4Iow5JK5hC2cfffxX7x',
+        url: 'https://open.spotify.com/track/2OE4Iow5JK5hC2cfffxX7x?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
         linkText: 'Stream on Spotify >',
       },
       bandcamp: {
@@ -66,7 +66,7 @@ export const songsAndAlbums: Record<string, Song> = {
     name: 'Hyper-Dimensional Racing',
     services: {
       spotify: {
-        url: 'https://open.spotify.com/track/4TmojlVjeDul4VAbOYiA3u',
+        url: 'https://open.spotify.com/track/4TmojlVjeDul4VAbOYiA3u?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
         linkText: 'Stream on Spotify >',
       },
       bandcamp: {
@@ -96,7 +96,7 @@ export const songsAndAlbums: Record<string, Song> = {
     name: 'Driving Alone',
     services: {
       spotify: {
-        url: 'https://open.spotify.com/track/0QYNw0ZU70Qzww19ljsmoN',
+        url: 'https://open.spotify.com/track/0QYNw0ZU70Qzww19ljsmoN?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
         linkText: 'Stream on Spotify >',
       },
       bandcamp: {
@@ -156,7 +156,7 @@ export const songsAndAlbums: Record<string, Song> = {
     name: 'Skiing on the Moon',
     services: {
       spotify: {
-        url: 'https://open.spotify.com/track/24YFCXxSkjdkswhg8CxGaU',
+        url: 'https://open.spotify.com/track/24YFCXxSkjdkswhg8CxGaU?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
         linkText: 'Stream on Spotify >',
       },
       bandcamp: {
@@ -186,7 +186,7 @@ export const songsAndAlbums: Record<string, Song> = {
     name: '3 AM 6502 Debugging',
     services: {
       spotify: {
-        url: 'https://open.spotify.com/track/0is4c6lMitziyqb5PedtIJ',
+        url: 'https://open.spotify.com/track/0is4c6lMitziyqb5PedtIJ?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
         linkText: 'Stream on Spotify >',
       },
       bandcamp: {
@@ -212,7 +212,7 @@ export const songsAndAlbums: Record<string, Song> = {
     name: 'Light-Cycle Arena',
     services: {
       spotify: {
-        url: 'https://open.spotify.com/track/2VIo6bcV1Dm0qh50uJjQ6T',
+        url: 'https://open.spotify.com/track/2VIo6bcV1Dm0qh50uJjQ6T?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
         linkText: 'Stream on Spotify >',
       },
       bandcamp: {
@@ -242,7 +242,7 @@ export const songsAndAlbums: Record<string, Song> = {
     name: 'Hyperspace Sunday Cruise',
     services: {
       spotify: {
-        url: 'https://open.spotify.com/track/3omNrdYSuhzOIYFVv6j71d',
+        url: 'https://open.spotify.com/track/3omNrdYSuhzOIYFVv6j71d?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
         linkText: 'Stream on Spotify >',
       },
       bandcamp: {
