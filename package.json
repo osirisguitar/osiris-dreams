@@ -12,7 +12,7 @@
     "@datapunt/matomo-tracker-react": "^0.5.1",
     "@socialgouv/matomo-next": "^1.8.0",
     "hamburger-react": "^2.5.1",
-    "next": "^15.1.6",
+    "next": "^15.2.4",
     "react": "latest",
     "react-countdown": "^2.3.5",
     "react-dom": "latest",
@@ -29,7 +29,7 @@
     "eslint-config-next": "latest",
     "postcss": "latest",
     "tailwindcss": "latest",
-    "tailwindcss-responsive-embed": "^1.0.0",
+    "tailwindcss-responsive-embed": "^0.2.2",
     "typescript": "latest"
   }
 }
