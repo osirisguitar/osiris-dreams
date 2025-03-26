@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@datapunt/matomo-tracker-react": "^0.5.1",
-    "@socialgouv/matomo-next": "^1.8.0",
+    "@socialgouv/matomo-next": "^1.9.2",
     "hamburger-react": "^2.5.1",
-    "next": "^15.2.4",
+    "next": "^15.2.3",
     "react": "latest",
     "react-countdown": "^2.3.5",
     "react-dom": "latest",
