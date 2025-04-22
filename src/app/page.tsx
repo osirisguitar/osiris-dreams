@@ -43,7 +43,7 @@ export default function Home() {
       <div className='max-w-5xl items-center justify-between font-mono text-sm lg:flex lg:pt-5'>
         <a href='/'>
           <Image
-            src='/osiris-dreams-logo.svg'
+            src='/osiris-dreams-logo.png'
             alt='OSIRIS DREAMS'
             className='drop-shadow-sm p-3  pt-[65px] md:pt-3'
             style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
