@@ -107,6 +107,7 @@ export const SongLandingPage = ({ song }: { song: Song }) => {
           alt='Album cover'
           className={streamingClass}
           style={{ maxWidth: '90vw' }}
+          priority
         ></Image>
         {Object.keys(song.services).map((serviceName) => {
           return (
