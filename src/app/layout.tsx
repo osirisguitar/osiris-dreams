@@ -2,8 +2,6 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Navigation } from './components/navigation'
-import { Suspense } from 'react'
-import { FacebookPixelEvents } from './components/facebookPixelEvents'
 import { headers } from 'next/headers'
 const inter = Inter({ subsets: ['latin'] })
 
@@ -38,14 +36,9 @@ export default async function RootLayout({
           </video>
         )}
         <main className='flex min-h-screen flex-col items-center'>
-          {
-            /*!path?.startsWith('/songs') && !path?.startsWith('/campaign') &&*/ <Navigation />
-          }
+          {<Navigation />}
           {children}
         </main>
-        <Suspense fallback={null}>
-          <FacebookPixelEvents />
-        </Suspense>
       </body>
     </html>
   )

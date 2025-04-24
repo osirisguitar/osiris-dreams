@@ -12,61 +12,6 @@ export const SongLandingPage = ({ song }: { song: Song }) => {
     init({ url: 'https://matomo.bornholm.se/', siteId: '2' })
   }, [])
 
-  useEffect(() => {
-    if (clickedService) {
-      push(['trackEvent', 'song', name, clickedService])
-      import('react-facebook-pixel')
-        .then((x) => x.default)
-        .then((ReactPixel) => {
-          ReactPixel.init('1618294722414496')
-          console.log('fbq', name, clickedService)
-          ReactPixel.trackCustom('ViewContent', {
-            content_name: name,
-            content_category: clickedService,
-          })
-        })
-
-      // Load the Pixel script only if it's not already loaded
-      const anyWindow = window as any
-      if (!anyWindow.fbq) {
-        ;(function (f, b, e, v, n, t, s) {
-          const fAny = f as any
-          let nAny = n as any
-          if (fAny.fbq) return
-          nAny = fAny.fbq = function () {
-            nAny.callMethod
-              ? nAny.callMethod.apply(nAny, arguments)
-              : nAny.queue.push(arguments)
-          }
-          if (!fAny._fbq) fAny._fbq = nAny
-          nAny.push = nAny
-          nAny.loaded = !0
-          nAny.version = '2.0'
-          nAny.queue = []
-          let tAny = t as any
-          tAny = b.createElement(e)
-          tAny.async = !0
-          tAny.src = v
-          let sAny = s as any
-          sAny = b.getElementsByTagName(e)[0]
-          sAny.parentNode.insertBefore(tAny, sAny)
-        })(
-          window,
-          document,
-          'script',
-          'https://connect.facebook.net/en_US/fbevents.js'
-        )
-
-        // Initialize Facebook Pixel
-        anyWindow.fbq('init', '1618294722414496')
-      }
-      anyWindow.fbq('track', 'StreamSong', {
-        content_name: name,
-        content_category: clickedService,
-      })
-    }
-  }, [name, clickedService])
-
   const trackStreaming = (serviceName: string) => {
     setClickedService(serviceName)
   }
