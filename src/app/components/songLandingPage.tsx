@@ -83,7 +83,7 @@ export const SongLandingPage = ({ song }: { song: Song }) => {
           left: 0,
           right: 0,
           position: 'absolute',
-          backgroundImage: `url(/${song.id}-album-cover.png)`,
+          backgroundImage: `url(/${song.id}-background.jpg)`,
           backgroundSize: 'cover',
           width: '100vw',
           height: '100vh',

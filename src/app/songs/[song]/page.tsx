@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: songsAndAlbums[song].name,
       siteName: 'OSIRIS DREAMS',
-      images: [`/${song}-album-cover.png`],
+      images: [`/${song}-background.jpg`],
       description: `Stream or buy ${songsAndAlbums[song].name} by OSIRIS DREAMS`,
     },
   }
