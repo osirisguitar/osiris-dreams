@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import { StreamingIcon } from './streamingIcon'
-import { push } from '@socialgouv/matomo-next'
 
 export const SongPromo = ({
   albumCover,
@@ -28,8 +26,8 @@ export const SongPromo = ({
               alt='{name}'
               className='w-full object-cover object-center'
               priority
-              width={1000}
-              height={1000}
+              width={300}
+              height={300}
             />
           </a>
         </div>

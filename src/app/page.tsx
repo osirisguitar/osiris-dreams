@@ -54,7 +54,7 @@ export default function Home() {
         </a>
       </div>
       <Heading id='news' text='The Encounter - out now!' style='h1' />
-      <div className='mb-4 text-center max-w-[300px]'>
+      <div className='mb-4 text-center w-[300px] h-[300px]'>
         <SongPromo
           name='the-encounter'
           albumCover='/the-encounter-album-cover.png'
