@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Navigation } from './components/navigation'
 import { headers } from 'next/headers'
+import { Signup } from './components/signup'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -38,6 +39,7 @@ export default async function RootLayout({
         <main className='flex min-h-screen flex-col items-center'>
           {<Navigation />}
           {children}
+          <Signup />
         </main>
       </body>
     </html>
