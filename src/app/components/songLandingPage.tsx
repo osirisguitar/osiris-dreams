@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react'
 import { Song } from '../data/songsAndAlbums'
 
 export const SongLandingPage = ({ song }: { song: Song }) => {
-  const name = song.id
   const [clickedService, setClickedService] = useState<string | null>(null)
 
   useEffect(() => {

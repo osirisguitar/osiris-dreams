@@ -39,7 +39,9 @@ export default async function RootLayout({
         <main className='flex min-h-screen flex-col items-center'>
           {<Navigation />}
           {children}
-          <Signup />
+          {!path?.startsWith('/songs') && !path?.startsWith('/campaign') && (
+            <Signup />
+          )}
         </main>
       </body>
     </html>
