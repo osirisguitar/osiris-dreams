@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import { Navigation } from './components/navigation'
 import { headers } from 'next/headers'
 import { Signup } from './components/signup'
+import { Player } from './components/player'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -40,7 +41,9 @@ export default async function RootLayout({
           {<Navigation />}
           {children}
           {!path?.startsWith('/songs') && !path?.startsWith('/campaign') && (
-            <Signup />
+            <div className='mb-10'>
+              <Signup />
+            </div>
           )}
         </main>
       </body>
