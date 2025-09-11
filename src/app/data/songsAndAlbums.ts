@@ -2,12 +2,14 @@ export interface Song {
   id: string
   name: string
   services: Record<string, { url: string; linkText: string }>
+  fileName?: string
 }
 
 export const songsAndAlbums: Record<string, Song> = {
   'the-encounter': {
     id: 'the-encounter',
     name: 'The Encounter',
+    fileName: 'OSIRIS DREAMS - The Encounter',
     services: {
       spotify: {
         url: 'https://open.spotify.com/track/6kpSuUS7qEngZwcGxwgwLu?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
@@ -34,6 +36,7 @@ export const songsAndAlbums: Record<string, Song> = {
   'dark-city': {
     id: 'dark-city',
     name: 'Dark City',
+    fileName: 'OSIRIS DREAMS - Dark City',
     services: {
       spotify: {
         url: 'https://open.spotify.com/track/2OE4Iow5JK5hC2cfffxX7x?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
@@ -64,6 +67,7 @@ export const songsAndAlbums: Record<string, Song> = {
   'hyper-dimensional-racing': {
     id: 'hyper-dimensional-racing',
     name: 'Hyper-Dimensional Racing',
+    fileName: 'OSIRIS DREAMS - Hyper-Dimensional Racing',
     services: {
       spotify: {
         url: 'https://open.spotify.com/track/4TmojlVjeDul4VAbOYiA3u?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
@@ -94,6 +98,7 @@ export const songsAndAlbums: Record<string, Song> = {
   'driving-alone': {
     id: 'driving-alone',
     name: 'Driving Alone',
+    fileName: 'OSIRIS DREAMS - Driving Alone',
     services: {
       spotify: {
         url: 'https://open.spotify.com/track/0QYNw0ZU70Qzww19ljsmoN?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
@@ -124,6 +129,8 @@ export const songsAndAlbums: Record<string, Song> = {
   'the-cybergenix-conspiracy': {
     id: 'the-cybergenix-conspiracy',
     name: 'The Cybergenix Conspiracy EP',
+    fileName:
+      'OSIRIS DREAMS - The Cybergenix Conspiracy - 01 Biomechanoid Prototype',
     services: {
       spotify: {
         url: 'https://open.spotify.com/album/1U3Z3BgAIBxUi39Fo6R0A7',
@@ -154,6 +161,7 @@ export const songsAndAlbums: Record<string, Song> = {
   'skiing-on-the-moon': {
     id: 'skiing-on-the-moon',
     name: 'Skiing on the Moon',
+    fileName: 'OSIRIS DREAMS - Skiing on the Moon',
     services: {
       spotify: {
         url: 'https://open.spotify.com/track/24YFCXxSkjdkswhg8CxGaU?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
@@ -184,6 +192,7 @@ export const songsAndAlbums: Record<string, Song> = {
   '3-am-6502-debugging': {
     id: '3-am-6502-debugging',
     name: '3 AM 6502 Debugging',
+    fileName: 'OSIRIS DREAMS - 3 AM 6502 Debugging',
     services: {
       spotify: {
         url: 'https://open.spotify.com/track/0is4c6lMitziyqb5PedtIJ?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
@@ -210,6 +219,7 @@ export const songsAndAlbums: Record<string, Song> = {
   'light-cycle-arena': {
     id: 'light-cycle-arena',
     name: 'Light-Cycle Arena',
+    fileName: 'OSIRIS DREAMS - Light-Cycle Arena',
     services: {
       spotify: {
         url: 'https://open.spotify.com/track/2VIo6bcV1Dm0qh50uJjQ6T?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
@@ -240,6 +250,7 @@ export const songsAndAlbums: Record<string, Song> = {
   'hyperspace-sunday-cruise': {
     id: 'hyperspace-sunday-cruise',
     name: 'Hyperspace Sunday Cruise',
+    fileName: 'OSIRIS DREAMS - Hyperspace Sunday Cruise',
     services: {
       spotify: {
         url: 'https://open.spotify.com/track/3omNrdYSuhzOIYFVv6j71d?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',

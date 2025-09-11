@@ -4,14 +4,21 @@ import { SomePromo } from './components/somePromo'
 import { SongPromo } from './components/songPromo'
 import { Heading } from './components/heading'
 import { init } from '@socialgouv/matomo-next'
-import { useEffect } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import Countdown, { zeroPad } from 'react-countdown'
 import { songsAndAlbums } from './data/songsAndAlbums'
+import { PlayerContext } from './components/playerContext'
 
 export default function Home() {
   useEffect(() => {
     init({ url: 'https://matomo.bornholm.se/', siteId: '2' })
   }, [])
+
+  const { song, setSong } = useContext(PlayerContext)
+
+  const playSong = (song: string, fileName: string) => {
+    setSong(fileName)
+  }
 
   const renderer = ({
     days,
@@ -53,12 +60,14 @@ export default function Home() {
           />
         </a>
       </div>
-      <Heading id='news' text='The Encounter - out now!' style='h1' />
+      <Heading id='news' text='Latest Release' style='h1' />
       <div className='mb-4 text-center w-[300px] h-[300px]'>
         <SongPromo
           name='the-encounter'
           albumCover='/the-encounter-album-cover.png'
           link='/songs/the-encounter'
+          fileName={songsAndAlbums['the-encounter'].fileName}
+          onPlay={playSong}
         ></SongPromo>
       </div>
 
@@ -75,6 +84,8 @@ export default function Home() {
                   name={songName}
                   albumCover={`/${songName}-album-cover.png`}
                   link={`/songs/${songName}`}
+                  fileName={songsAndAlbums[songName].fileName}
+                  onPlay={playSong}
                 ></SongPromo>
               )
             })}

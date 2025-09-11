@@ -1,10 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { Navigation } from './components/navigation'
 import { headers } from 'next/headers'
-import { Signup } from './components/signup'
-import { Player } from './components/player'
+import { MainLayout } from './components/mainLayout'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -37,15 +35,7 @@ export default async function RootLayout({
             <source src='background2.mp4' type='video/mp4' />
           </video>
         )}
-        <main className='flex min-h-screen flex-col items-center'>
-          {<Navigation />}
-          {children}
-          {!path?.startsWith('/songs') && !path?.startsWith('/campaign') && (
-            <div className='mb-10'>
-              <Signup />
-            </div>
-          )}
-        </main>
+        <MainLayout path={path}>{children}</MainLayout>
       </body>
     </html>
   )

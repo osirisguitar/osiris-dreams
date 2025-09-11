@@ -4,10 +4,14 @@ export const SongPromo = ({
   albumCover,
   name,
   link,
+  fileName,
+  onPlay,
 }: {
   albumCover: string
   name: string
   link: string
+  fileName?: string
+  onPlay?: (song: string, fileName: string) => void
 }) => {
   const streamingClass = 'flex flex-col'
 
@@ -40,6 +44,17 @@ export const SongPromo = ({
               />
             </div>
           </a>
+          {fileName && (
+            <Image
+              src='/play-button.png'
+              alt='Play button'
+              className='object-cover object-center absolute top-7 left-7'
+              priority
+              width={40}
+              height={40}
+              onClick={() => onPlay && onPlay(name, fileName)}
+            />
+          )}
         </div>
       </div>
     </div>

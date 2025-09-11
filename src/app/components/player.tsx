@@ -3,13 +3,27 @@
 import AudioPlayer from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
 
-export const Player = () => {
+export const Player = ({ play, song }: { play: boolean; song: string }) => {
   return (
-    <AudioPlayer
-      autoPlay
-      src='/OSIRIS DREAMS - The Cybergenix Conspiracy - 01 Biomechanoid Prototype.mp3'
-      onPlay={(e) => console.log('onPlay')}
-      // other props here
-    />
+    play && (
+      <>
+        <style>
+          {`.rhap_container {
+              background-color: #000;
+            }
+            
+            .rhap_header, .rhap_current-time, .rhap_total-time {
+              color: #0fe379
+            }
+            `}
+        </style>
+        <AudioPlayer
+          autoPlay
+          src={'/' + song + '.mp3'}
+          volume={0.1}
+          header={song}
+        />
+      </>
+    )
   )
 }
