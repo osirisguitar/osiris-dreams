@@ -31,7 +31,7 @@ export default async function RootLayout({
             muted
             loop
             id='bgvid'
-            className='-z-10 saturate-50 opacity-50'
+            className='-z-10 saturate-50 opacity-30'
           >
             <source src='background2.mp4' type='video/mp4' />
           </video>

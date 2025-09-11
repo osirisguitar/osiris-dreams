@@ -21,14 +21,24 @@ export const SongPromo = ({
             target='_blank'
             rel='noopener noreferrer'
           >
-            <Image
-              src={albumCover}
-              alt='{name}'
-              className='w-full object-cover object-center'
-              priority
-              width={300}
-              height={300}
-            />
+            <div className='relative top-0 left-0'>
+              <Image
+                src={albumCover}
+                alt='{name}'
+                className='w-full object-cover object-center relative top-0 left-0'
+                priority
+                width={300}
+                height={300}
+              />
+              <Image
+                src='/stream-now-banner.png'
+                alt='Streaming now banner'
+                className='w-full object-cover object-center absolute top-0 left-0'
+                priority
+                width={300}
+                height={300}
+              />
+            </div>
           </a>
         </div>
       </div>
