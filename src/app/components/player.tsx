@@ -17,12 +17,7 @@ export const Player = ({ play, song }: { play: boolean; song: string }) => {
             }
             `}
         </style>
-        <AudioPlayer
-          autoPlay
-          src={'/' + song + '.mp3'}
-          volume={0.1}
-          header={song}
-        />
+        <AudioPlayer autoPlay src={'/' + song + '.mp3'} header={song} />
       </>
     )
   )
