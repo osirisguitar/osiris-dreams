@@ -5,8 +5,8 @@ FROM node:22 AS builder
 WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@10.17.0 --activate
 
-ENV NEXT_TELEMETRY_DISABLED 1
-ENV NODE_TLS_REJECT_UNAUTHORIZED 0
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV NODE_TLS_REJECT_UNAUTHORIZED=0
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 RUN pnpm install
@@ -32,9 +32,9 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
 
-ENV NEXT_TELEMETRY_DISABLED 1
-ENV NODE_ENV production
-ENV PORT 3000
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV NODE_ENV=production
+ENV PORT=3000
 
 EXPOSE 3000
 CMD ["pnpm", "start"]
