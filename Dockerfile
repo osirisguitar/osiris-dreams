@@ -3,21 +3,21 @@
 
 FROM node:22 AS builder
 WORKDIR /app
+RUN corepack enable && corepack prepare pnpm@10.17.0 --activate
 
 ENV NEXT_TELEMETRY_DISABLED 1
 ENV NODE_TLS_REJECT_UNAUTHORIZED 0
 
-COPY package*json ./
-RUN npm ci
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+RUN pnpm install
 
 COPY . .
-RUN npm run build
-
-RUN npm ci --omit dev
+RUN pnpm run build
 
 # Production image, copy all the files and run next.
 FROM node:22-alpine AS runner
 WORKDIR /app
+RUN corepack enable && corepack prepare pnpm@10.17.0 --activate
 
 RUN apk add --no-cache libc6-compat
 
@@ -37,4 +37,4 @@ ENV NODE_ENV production
 ENV PORT 3000
 
 EXPOSE 3000
-CMD ["npm", "run", "start"]
+CMD ["pnpm", "start"]

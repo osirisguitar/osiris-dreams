@@ -12,11 +12,6 @@ export const MainLayout = ({
   children: React.ReactNode
   path: string | null
 }) => {
-  /*const playSong = (song: string) => {
-    setPlay(true)
-    setSong(song)
-  }*/
-
   const [song, setSong] = useState<string>('')
 
   const value = useMemo(() => {

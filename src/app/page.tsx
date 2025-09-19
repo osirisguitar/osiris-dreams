@@ -8,6 +8,7 @@ import { useContext, useEffect, useState } from 'react'
 import Countdown, { zeroPad } from 'react-countdown'
 import { songsAndAlbums } from './data/songsAndAlbums'
 import { PlayerContext } from './components/playerContext'
+import { push } from '@socialgouv/matomo-next'
 
 export default function Home() {
   useEffect(() => {
@@ -17,6 +18,7 @@ export default function Home() {
   const { song, setSong } = useContext(PlayerContext)
 
   const playSong = (song: string, fileName: string) => {
+    push(['trackEvent', 'preview', song])
     setSong(fileName)
   }
 
