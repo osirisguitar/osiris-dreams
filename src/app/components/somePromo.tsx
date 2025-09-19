@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { push } from '@socialgouv/matomo-next'
+import Link from 'next/link'
 
 export const SomePromo = ({
   logo,
@@ -16,7 +17,7 @@ export const SomePromo = ({
     'group rounded-lg px-5 py-4 m-3 border-4 border-[#F515AC] outline outline-4 outline-[#5EC4FF] bg-black bg-opacity-60 font-mono'
 
   return (
-    <a
+    <Link
       href={link}
       className={streamingClass}
       onClick={() => {
@@ -39,6 +40,6 @@ export const SomePromo = ({
       <div>
         <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>{body}</p>
       </div>
-    </a>
+    </Link>
   )
 }

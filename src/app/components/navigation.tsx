@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Heading } from './heading'
 import Hamburger from 'hamburger-react'
+import Link from 'next/link'
 
 export const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -14,37 +15,37 @@ export const Navigation = () => {
   return (
     <>
       <div className='lg:pt-4 flex-row hidden md:flex'>
-        <a href='/'>
+        <Link href='/'>
           <Heading text='Home' style='h3' />
-        </a>
+        </Link>
         <span className='px-3'>|</span>
-        <a href='/#news'>
+        <Link href='/#news'>
           <Heading text='Music' style='h3' />
-        </a>
+        </Link>
         <span className='px-3'>|</span>
-        <a href='/#stream'>
+        <Link href='/#stream'>
           <Heading text='Stream' style='h3' />
-        </a>
+        </Link>
         <span className='px-3'>|</span>
-        <a href='/#buy'>
+        <Link href='/#buy'>
           <Heading text='Buy songs' style='h3' />
-        </a>
+        </Link>
         <span className='px-3'>|</span>
-        <a href='/#social-media'>
+        <Link href='/#social-media'>
           <Heading text='Social Media' style='h3' />
-        </a>
+        </Link>
         <span className='px-3'>|</span>
-        <a href='/#contact'>
+        <Link href='/#contact'>
           <Heading text='Contact' style='h3' />
-        </a>
+        </Link>
         <span className='px-3'>|</span>
-        <a href='/bio'>
+        <Link href='/bio'>
           <Heading text='Bio' style='h3' />
-        </a>
+        </Link>
         <span className='px-3'>|</span>
-        <a href='/images'>
+        <Link href='/images'>
           <Heading text='Images' style='h3' />
-        </a>
+        </Link>
       </div>
       <div className='absolute top-0 right-0 flex flex-col items-end'>
         <div className='mt-4 mr-4 z-20 md:hidden'>
@@ -52,30 +53,30 @@ export const Navigation = () => {
         </div>
         {menuOpen && (
           <div className='absolute z-10 top-0 w-[320px] flex flex-col space-y-2 rounded-lg px-5 py-4 m-3 border-4 border-[#F515AC] outline outline-4 outline-[#5EC4FF] bg-black bg-opacity-60 font-mono'>
-            <a href='/' onClick={closeMenu}>
+            <Link href='/' onClick={closeMenu}>
               <Heading text='Home' style='h2' />
-            </a>
-            <a href='/#news' onClick={closeMenu}>
+            </Link>
+            <Link href='/#news' onClick={closeMenu}>
               <Heading text='Music' style='h2' />
-            </a>
-            <a href='/#stream' onClick={closeMenu}>
+            </Link>
+            <Link href='/#stream' onClick={closeMenu}>
               <Heading text='Stream' style='h2' />
-            </a>
-            <a href='/#buy' onClick={closeMenu}>
+            </Link>
+            <Link href='/#buy' onClick={closeMenu}>
               <Heading text='Buy songs' style='h2' />
-            </a>
-            <a href='/#social-media' onClick={closeMenu}>
+            </Link>
+            <Link href='/#social-media' onClick={closeMenu}>
               <Heading text='Social Media' style='h2' />
-            </a>
-            <a href='/#contact' onClick={closeMenu}>
+            </Link>
+            <Link href='/#contact' onClick={closeMenu}>
               <Heading text='Contact' style='h2' />
-            </a>
-            <a href='/bio' onClick={closeMenu}>
+            </Link>
+            <Link href='/bio' onClick={closeMenu}>
               <Heading text='Bio' style='h2' />
-            </a>
-            <a href='/images' onClick={closeMenu}>
+            </Link>
+            <Link href='/images' onClick={closeMenu}>
               <Heading text='Images' style='h2' />
-            </a>
+            </Link>
           </div>
         )}
       </div>

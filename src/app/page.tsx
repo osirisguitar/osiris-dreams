@@ -9,6 +9,7 @@ import Countdown, { zeroPad } from 'react-countdown'
 import { songsAndAlbums } from './data/songsAndAlbums'
 import { PlayerContext } from './components/playerContext'
 import { push } from '@socialgouv/matomo-next'
+import Link from 'next/link'
 
 export default function Home() {
   useEffect(() => {
@@ -50,7 +51,7 @@ export default function Home() {
   return (
     <>
       <div className='max-w-5xl items-center justify-between font-mono text-sm lg:flex lg:pt-5'>
-        <a href='/'>
+        <Link href='/'>
           <Image
             src='/osiris-dreams-logo.png'
             alt='OSIRIS DREAMS'
@@ -60,7 +61,7 @@ export default function Home() {
             height={350}
             priority
           />
-        </a>
+        </Link>
       </div>
       <Heading id='news' text='Latest Release' style='h1' />
       <div className='mb-4 text-center w-[300px] h-[300px]'>
@@ -170,12 +171,14 @@ export default function Home() {
       <Heading id='contact' text='Contact' style='h1' />
       <div className='font-mono mt-3 mb-10'>
         Email:{' '}
-        <a href='mailto:osiris@osirisdreams.com'>osiris@osirisdreams.com</a>
+        <Link href='mailto:osiris@osirisdreams.com'>
+          osiris@osirisdreams.com
+        </Link>
         <br />
         Mastodon:{' '}
-        <a rel='me' href='https://mastodon.nu/@osiris'>
+        <Link rel='me' target='_blank' href='https://mastodon.nu/@osiris'>
           @osiris@mastodon.nu
-        </a>
+        </Link>
       </div>
     </>
   )

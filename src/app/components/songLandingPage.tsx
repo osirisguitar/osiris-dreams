@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { init, push } from '@socialgouv/matomo-next'
 import { useEffect, useState } from 'react'
 import { Song } from '../data/songsAndAlbums'
+import Link from 'next/link'
 
 export const SongLandingPage = ({ song }: { song: Song }) => {
   const [clickedService, setClickedService] = useState<string | null>(null)
@@ -64,7 +65,7 @@ export const SongLandingPage = ({ song }: { song: Song }) => {
                 maxWidth: '90vw',
               }}
             >
-              <a
+              <Link
                 href={song.services[serviceName].url}
                 target='_blank'
                 onClick={() => {
@@ -90,7 +91,7 @@ export const SongLandingPage = ({ song }: { song: Song }) => {
                     {song.services[serviceName].linkText}
                   </h3>
                 </div>
-              </a>
+              </Link>
             </div>
           )
         })}

@@ -4,6 +4,7 @@ import { Heading } from '../components/heading'
 import { init } from '@socialgouv/matomo-next'
 import { useEffect } from 'react'
 import { TextBox } from '../components/textBox'
+import Link from 'next/link'
 
 export default function Bio() {
   useEffect(() => {
@@ -13,7 +14,7 @@ export default function Bio() {
   return (
     <>
       <div className='max-w-5xl items-center justify-between font-mono text-sm lg:flex'>
-        <a href='/'>
+        <Link href='/'>
           <Image
             src='/osiris-dreams-logo.svg'
             alt='OSIRIS DREAMS'
@@ -22,7 +23,7 @@ export default function Bio() {
             width={500}
             height={200}
           />
-        </a>
+        </Link>
       </div>
 
       <div className='max-w-5xl'>

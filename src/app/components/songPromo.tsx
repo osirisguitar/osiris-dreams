@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const SongPromo = ({
   albumCover,
@@ -19,7 +20,7 @@ export const SongPromo = ({
     <div className='flex flex-col text-center'>
       <div className='relative'>
         <div className='inset-0 w-full p-4'>
-          <a
+          <Link
             href={link}
             className={streamingClass}
             target='_blank'
@@ -43,7 +44,7 @@ export const SongPromo = ({
                 height={300}
               />
             </div>
-          </a>
+          </Link>
           {fileName && (
             <Image
               src='/play-button.png'
