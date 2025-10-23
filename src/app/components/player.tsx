@@ -48,13 +48,21 @@ export const Player = ({
     play && (
       <>
         <style>
-          {`.rhap_container {
-              background-color: #000;
-            }
-            
-            .rhap_header, .rhap_current-time, .rhap_total-time {
-              color: #0fe379
-            }
+          {`
+.rhap_container {
+  background-color: #000;
+  text-transform: uppercase;
+  font-family: pocket-calculator;
+  font-size: 1.5em;
+}
+  
+.rhap_header, .rhap_current-time, .rhap_total-time {
+  color: #0fe379
+}
+
+.rhap_main-controls-button {
+  color: #0fe379
+}
             `}
         </style>
         <AudioPlayer
