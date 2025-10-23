@@ -5,47 +5,28 @@ import { SongPromo } from './components/songPromo'
 import { Heading } from './components/heading'
 import { init } from '@socialgouv/matomo-next'
 import { useContext, useEffect, useState } from 'react'
-import Countdown, { zeroPad } from 'react-countdown'
 import { songsAndAlbums } from './data/songsAndAlbums'
 import { PlayerContext } from './components/playerContext'
 import { push } from '@socialgouv/matomo-next'
 import Link from 'next/link'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/effect-coverflow'
+import 'swiper/css/pagination'
+import 'swiper/css/autoplay'
+import { EffectCoverflow, Autoplay } from 'swiper/modules'
+import { Song } from './common/types'
 
 export default function Home() {
   useEffect(() => {
     init({ url: 'https://matomo.bornholm.se/', siteId: '2' })
   }, [])
 
-  const { song, setSong } = useContext(PlayerContext)
+  const { setSong } = useContext(PlayerContext)
 
-  const playSong = (song: string, fileName: string) => {
-    push(['trackEvent', 'preview', song])
-    setSong(fileName)
-  }
-
-  const renderer = ({
-    days,
-    hours,
-    minutes,
-    seconds,
-    completed,
-  }: {
-    days: number
-    hours: number
-    minutes: number
-    seconds: number
-    completed: boolean
-  }) => {
-    if (completed) {
-      // Render a completed state
-      return <></>
-    } else {
-      // Render a countdown
-      const countdown = `${days} : ${zeroPad(hours)} : ${zeroPad(
-        minutes
-      )} : ${zeroPad(seconds)}`
-      return <Heading text={countdown} style='h2' />
-    }
+  const playSong = (song: Song) => {
+    push(['trackEvent', 'preview', song.name])
+    setSong(song)
   }
 
   return (
@@ -63,35 +44,43 @@ export default function Home() {
           />
         </Link>
       </div>
-      <Heading id='news' text='Latest Release' style='h1' />
-      <div className='mb-4 text-center w-[300px] h-[300px]'>
-        <SongPromo
-          name='the-encounter'
-          albumCover='/the-encounter-album-cover.png'
-          link='/songs/the-encounter'
-          fileName={songsAndAlbums['the-encounter'].fileName}
-          onPlay={playSong}
-        ></SongPromo>
-      </div>
 
-      <Heading id='songs-albums' text='Songs and Albums' style='h1' />
-
-      <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:text-left'>
-        {songsAndAlbums &&
-          Object.keys(songsAndAlbums)
-            .slice(1)
-            .map((songName) => {
+      <Heading id='songs-albums' text='Songs' style='h1' />
+      <div className='max-w-5xl'>
+        <Swiper
+          effect={'coverflow'}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={'auto'}
+          coverflowEffect={{
+            rotate: 40,
+            stretch: 50,
+            depth: 150,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          autoplay={{ delay: 2000 }}
+          pagination={{ clickable: true }}
+          modules={[EffectCoverflow, Autoplay]}
+          className='mySwiper'
+        >
+          {songsAndAlbums &&
+            Object.keys(songsAndAlbums).map((songName) => {
+              const song = songsAndAlbums[songName]
               return (
-                <SongPromo
-                  key={songName}
-                  name={songName}
-                  albumCover={`/${songName}-album-cover.png`}
-                  link={`/songs/${songName}`}
-                  fileName={songsAndAlbums[songName].fileName}
-                  onPlay={playSong}
-                ></SongPromo>
+                <SwiperSlide
+                  key={song.id}
+                  style={{
+                    width: '80vw',
+                    maxWidth: 300,
+                    height: 'auto',
+                  }}
+                >
+                  <SongPromo song={song} onPlay={playSong} />
+                </SwiperSlide>
               )
             })}
+        </Swiper>
       </div>
 
       <Heading id='stream' text='Streaming Services' style='h1' />

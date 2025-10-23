@@ -23,7 +23,7 @@ export default async function RootLayout({
     <html lang='en'>
       <head></head>
       <body className={inter.className}>
-        {!path?.startsWith('/songs') && !path?.startsWith('/campaign') && (
+        {!path?.startsWith('/songs/') && !path?.startsWith('/campaign') && (
           <video
             playsInline
             autoPlay

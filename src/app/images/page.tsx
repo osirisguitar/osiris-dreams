@@ -13,7 +13,7 @@ export default function Images() {
 
   return (
     <>
-      <div className='max-w-5xl items-center justify-between font-mono text-sm lg:flex'>
+      <div className='max-w-5xl items-center justify-between font-mono text-sm lg:flex pt-5'>
         <Link href='/'>
           <Image
             src='/osiris-dreams-logo.svg'

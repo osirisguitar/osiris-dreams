@@ -14,12 +14,12 @@ export const Navigation = () => {
 
   return (
     <>
-      <div className='lg:pt-4 flex-row hidden md:flex'>
+      <div className='lg:mt-4 p-2 flex-row hidden md:flex fixed z-10 bg-black/[.5]'>
         <Link href='/'>
           <Heading text='Home' style='h3' />
         </Link>
         <span className='px-3'>|</span>
-        <Link href='/#news'>
+        <Link href='/songs'>
           <Heading text='Music' style='h3' />
         </Link>
         <span className='px-3'>|</span>
@@ -56,7 +56,7 @@ export const Navigation = () => {
             <Link href='/' onClick={closeMenu}>
               <Heading text='Home' style='h2' />
             </Link>
-            <Link href='/#news' onClick={closeMenu}>
+            <Link href='/songs' onClick={closeMenu}>
               <Heading text='Music' style='h2' />
             </Link>
             <Link href='/#stream' onClick={closeMenu}>

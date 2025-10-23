@@ -8,7 +8,7 @@ export const Signup = () => {
       <Script src='/signup.js' />
       <div
         style={{ textAlign: 'left' }}
-        className='sender-form-field'
+        className='sender-form-field mb-[50px] mt-10'
         data-sender-form-id='bYEXN2'
       ></div>
     </>

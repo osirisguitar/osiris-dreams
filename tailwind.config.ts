@@ -16,6 +16,7 @@ const config: Config = {
       fontFamily: {
         racewayBack: ['cyberspace-raceway-back', 'sans-serif'],
         racewayFront: ['cyberspace-raceway-front', 'sans-serif'],
+        pocketCalculator: ['pocket-calculator'],
       },
     },
   },

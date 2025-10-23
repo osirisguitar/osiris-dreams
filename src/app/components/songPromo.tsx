@@ -1,18 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { Song } from '../common/types'
 
 export const SongPromo = ({
-  albumCover,
-  name,
-  link,
-  fileName,
+  song,
   onPlay,
 }: {
-  albumCover: string
-  name: string
-  link: string
-  fileName?: string
-  onPlay?: (song: string, fileName: string) => void
+  song: Song
+  onPlay?: (song: Song) => void
 }) => {
   const streamingClass = 'flex flex-col'
 
@@ -21,14 +16,14 @@ export const SongPromo = ({
       <div className='relative'>
         <div className='inset-0 w-full p-4'>
           <Link
-            href={link}
+            href={'/songs/' + song.id}
             className={streamingClass}
             target='_blank'
             rel='noopener noreferrer'
           >
             <div className='relative top-0 left-0'>
               <Image
-                src={albumCover}
+                src={'/' + (song.albumCover ?? song.id) + '-album-cover.png'}
                 alt='{name}'
                 className='w-full object-cover object-center relative top-0 left-0'
                 priority
@@ -45,7 +40,7 @@ export const SongPromo = ({
               />
             </div>
           </Link>
-          {fileName && (
+          {song.fileName && (
             <Image
               src='/play-button.png'
               alt='Play button'
@@ -53,9 +48,12 @@ export const SongPromo = ({
               priority
               width={40}
               height={40}
-              onClick={() => onPlay && onPlay(name, fileName)}
+              onClick={() => onPlay && onPlay(song)}
             />
           )}
+          <div className='text-xl uppercase text-green-500 font-pocketCalculator'>
+            {song.name}
+          </div>
         </div>
       </div>
     </div>

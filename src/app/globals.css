@@ -45,3 +45,13 @@ video {
   font-family: 'cyberspace-raceway-back';
   src: url('/Cyberspace-Raceway-Back.otf');
 }
+
+@font-face {
+  font-family: 'cyberspace-raceway-back';
+  src: url('/Cyberspace-Raceway-Back.otf');
+}
+
+@font-face {
+  font-family: 'pocket-calculator';
+  src: url('/pocket_calcuatlor_ot.otf');
+}

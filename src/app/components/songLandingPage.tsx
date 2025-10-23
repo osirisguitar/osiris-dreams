@@ -1,12 +1,12 @@
 'use client'
 import Image from 'next/image'
-import { init, push } from '@socialgouv/matomo-next'
+import { init } from '@socialgouv/matomo-next'
 import { useEffect, useState } from 'react'
-import { Song } from '../data/songsAndAlbums'
 import Link from 'next/link'
+import { Song } from '../common/types'
 
 export const SongLandingPage = ({ song }: { song: Song }) => {
-  const [clickedService, setClickedService] = useState<string | null>(null)
+  const setClickedService = useState<string | null>(null)[1]
 
   useEffect(() => {
     init({ url: 'https://matomo.bornholm.se/', siteId: '2' })
@@ -28,7 +28,7 @@ export const SongLandingPage = ({ song }: { song: Song }) => {
           left: 0,
           right: 0,
           position: 'absolute',
-          backgroundImage: `url(/${song.id}-background.jpg)`,
+          backgroundImage: `url(/${song.albumCover ?? song.id}-background.jpg)`,
           backgroundSize: 'cover',
           width: '100vw',
           height: '100vh',
@@ -45,8 +45,17 @@ export const SongLandingPage = ({ song }: { song: Song }) => {
           padding: 0,
         }}
       >
+        <div
+          className='font-pocketCalculator uppercase text-green-500 text-4xl mb-4 text-center'
+          style={{
+            backgroundColor: 'rgba(0,0,0,0.5)',
+            maxWidth: '90vw',
+          }}
+        >
+          {song.name}
+        </div>
         <Image
-          src={`/${song.id}-album-cover.png`}
+          src={`/${song.albumCover ?? song.id}-album-cover.png`}
           width='500'
           height='500'
           alt='Album cover'

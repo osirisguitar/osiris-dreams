@@ -1,6 +1,7 @@
 import React, { Dispatch, SetStateAction } from 'react'
+import { Song } from '../common/types'
 
 export const PlayerContext = React.createContext<{
-  song: string
-  setSong: Dispatch<SetStateAction<string>>
-}>({ song: '', setSong: () => {} })
+  song: Song | undefined
+  setSong: Dispatch<SetStateAction<Song | undefined>>
+}>({ song: undefined, setSong: () => {} })

@@ -1,9 +1,4 @@
-export interface Song {
-  id: string
-  name: string
-  services: Record<string, { url: string; linkText: string }>
-  fileName?: string
-}
+import { Song } from '../common/types'
 
 export const songsAndAlbums: Record<string, Song> = {
   'the-encounter': {
@@ -126,22 +121,23 @@ export const songsAndAlbums: Record<string, Song> = {
       },
     },
   },
-  'the-cybergenix-conspiracy': {
-    id: 'the-cybergenix-conspiracy',
-    name: 'The Cybergenix Conspiracy EP',
+  'biomechanoid-prototype': {
+    id: 'biomechanoid-prototype',
+    name: 'Biomechanoid Prototype',
+    albumCover: 'the-cybergenix-conspiracy',
     fileName:
       'OSIRIS DREAMS - The Cybergenix Conspiracy - 01 Biomechanoid Prototype',
     services: {
       spotify: {
-        url: 'https://open.spotify.com/album/1U3Z3BgAIBxUi39Fo6R0A7',
+        url: 'https://open.spotify.com/track/3bppcQYamAos9j7GTkdb7f?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
         linkText: 'Stream on Spotify >',
       },
       bandcamp: {
-        url: 'https://osirisdreams.bandcamp.com/album/the-cybergenix-conspiracy',
+        url: 'https://osirisdreams.bandcamp.com/track/biomechanoid-prototype',
         linkText: 'Buy or stream on BandCamp >',
       },
       applemusic: {
-        url: 'https://music.apple.com/album/the-cybergenix-conspiracy-ep/1740412260?app=music',
+        url: 'https://music.apple.com/se/album/biomechanoid-prototype/1740412260?i=1740412261&app=music',
         linkText: 'Buy or stream on Apple Music >',
       },
       youtube: {
@@ -149,11 +145,110 @@ export const songsAndAlbums: Record<string, Song> = {
         linkText: 'Music videos on YouTube >',
       },
       'youtube-music': {
-        url: 'https://music.youtube.com/playlist?list=OLAK5uy_njvdl0C8IQ1f4QbATtb8G1-Bx95EZkPcY',
+        url: 'https://music.youtube.com/watch?v=4iDud38SYVM&list=OLAK5uy_njvdl0C8IQ1f4QbATtb8G1-Bx95EZkPcY',
         linkText: 'Stream on YouTube Music >',
       },
       funkwhale: {
-        url: 'https://open.audio/library/albums/21093',
+        url: 'https://open.audio/library/tracks/422618/',
+        linkText: 'Stream for free on Open.Audio >',
+      },
+    },
+  },
+  'emerging-sentience': {
+    id: 'emerging-sentience',
+    name: 'Emerging Sentience',
+    albumCover: 'the-cybergenix-conspiracy',
+    fileName:
+      'OSIRIS DREAMS - The Cybergenix Conspiracy - 02 Emerging Sentience',
+    services: {
+      spotify: {
+        url: 'https://open.spotify.com/track/4neYjnNW2fg9qxBHPWq1Bl?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
+        linkText: 'Stream on Spotify >',
+      },
+      bandcamp: {
+        url: 'https://osirisdreams.bandcamp.com/track/emerging-sentience',
+        linkText: 'Buy or stream on BandCamp >',
+      },
+      applemusic: {
+        url: 'https://music.apple.com/se/album/emerging-sentience/1740412260?i=1740412262&app=music',
+        linkText: 'Buy or stream on Apple Music >',
+      },
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=-ebGoJhwjeg&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=2',
+        linkText: 'Music videos on YouTube >',
+      },
+      'youtube-music': {
+        url: 'https://music.youtube.com/watch?v=-ebGoJhwjeg&list=OLAK5uy_njvdl0C8IQ1f4QbATtb8G1-Bx95EZkPcY',
+        linkText: 'Stream on YouTube Music >',
+      },
+      funkwhale: {
+        url: 'https://open.audio/library/tracks/422615/',
+        linkText: 'Stream for free on Open.Audio >',
+      },
+    },
+  },
+  'escape-from-cybergenix': {
+    id: 'escape-from-cybergenix',
+    name: 'Escape from Cybergenix',
+    albumCover: 'the-cybergenix-conspiracy',
+    fileName:
+      'OSIRIS DREAMS - The Cybergenix Conspiracy - 03 Escape from Cybergenix',
+    services: {
+      spotify: {
+        url: 'https://open.spotify.com/track/0pXCe1S9b526l8gtZCovu2?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
+        linkText: 'Stream on Spotify >',
+      },
+      bandcamp: {
+        url: 'https://osirisdreams.bandcamp.com/track/emerging-sentience',
+        linkText: 'Buy or stream on BandCamp >',
+      },
+      applemusic: {
+        url: 'https://music.apple.com/se/album/escape-from-cybergenix/1740412260?i=1740412263&app=music',
+        linkText: 'Buy or stream on Apple Music >',
+      },
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=EzlmPCJPqDs&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=3',
+        linkText: 'Music videos on YouTube >',
+      },
+      'youtube-music': {
+        url: 'https://music.youtube.com/watch?v=OM_waUyoUF0&list=OLAK5uy_njvdl0C8IQ1f4QbATtb8G1-Bx95EZkPcY',
+        linkText: 'Stream on YouTube Music >',
+      },
+      funkwhale: {
+        url: 'https://open.audio/library/tracks/422617/',
+        linkText: 'Stream for free on Open.Audio >',
+      },
+    },
+  },
+  'sanctuary-cover-up': {
+    id: 'sanctuary-cover-up',
+    name: 'Sanctuary / Cover Up',
+    albumCover: 'the-cybergenix-conspiracy',
+    fileName:
+      'OSIRIS DREAMS - The Cybergenix Conspiracy - 04 Sanctuary - Cover-up',
+    services: {
+      spotify: {
+        url: 'https://open.spotify.com/track/5SdRFN6ufTcgQJIYIaxt49?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
+        linkText: 'Stream on Spotify >',
+      },
+      bandcamp: {
+        url: 'https://osirisdreams.bandcamp.com/track/sanctuary-cover-up',
+        linkText: 'Buy or stream on BandCamp >',
+      },
+      applemusic: {
+        url: 'https://music.apple.com/se/album/sanctuary-cover-up/1740412260?i=1740412264&app=music',
+        linkText: 'Buy or stream on Apple Music >',
+      },
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=6iN0XdYOonE&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=4',
+        linkText: 'Music videos on YouTube >',
+      },
+      'youtube-music': {
+        url: 'https://music.youtube.com/watch?v=6iN0XdYOonE&list=OLAK5uy_njvdl0C8IQ1f4QbATtb8G1-Bx95EZkPcY',
+        linkText: 'Stream on YouTube Music >',
+      },
+      funkwhale: {
+        url: 'https://open.audio/library/tracks/422616/',
         linkText: 'Stream for free on Open.Audio >',
       },
     },
