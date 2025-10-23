@@ -14,7 +14,7 @@ export default function Songs() {
     init({ url: 'https://matomo.bornholm.se/', siteId: '2' })
   }, [])
 
-  const { song, setSong } = useContext(PlayerContext)
+  const { setSong } = useContext(PlayerContext)
 
   const playSong = (song: Song) => {
     push(['trackEvent', 'preview', song.name])
@@ -23,7 +23,7 @@ export default function Songs() {
 
   return (
     <>
-      <div className='max-w-5xl items-center justify-between font-mono text-sm lg:flex pt-5'>
+      <div className='lg:max-w-5xl max-w-[70%]  items-center justify-between font-mono text-sm lg:flex pt-5'>
         <Link href='/'>
           <Image
             src='/osiris-dreams-logo.svg'

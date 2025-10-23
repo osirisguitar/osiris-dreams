@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <>
-      <div className='max-w-5xl items-center justify-between font-mono text-sm lg:flex lg:pt-5'>
+      <div className='lg:max-w-5xl max-w-[70%] items-center justify-between font-mono text-sm lg:flex lg:pt-5'>
         <Link href='/'>
           <Image
             src='/osiris-dreams-logo.png'
@@ -46,7 +46,7 @@ export default function Home() {
       </div>
 
       <Heading id='songs-albums' text='Songs' style='h1' />
-      <div className='max-w-5xl'>
+      <div className='lg:max-w-5xl max-w-[90%]'>
         <Swiper
           effect={'coverflow'}
           grabCursor={true}
