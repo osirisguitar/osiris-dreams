@@ -41,15 +41,22 @@ export const SongPromo = ({
             </div>
           </Link>
           {song.fileName && (
-            <Image
-              src='/play-button.png'
-              alt='Play button'
-              className='object-cover object-center absolute top-7 left-7'
-              priority
-              width={40}
-              height={40}
+            <div
+              className='cursor-pointer flex absolute top-7 left-7 items-center bg-green-800/[.8] p-2 rounded-lg hover:border-2 hover:border-green-200'
               onClick={() => onPlay && onPlay(song)}
-            />
+            >
+              <Image
+                src='/play-button.png'
+                alt='Play button'
+                className='object-cover object-center'
+                priority
+                width={40}
+                height={40}
+              />
+              <div className='ml-3 uppercase font-pocketCalculator text-2xl'>
+                Preview
+              </div>
+            </div>
           )}
           <div className='text-xl uppercase text-green-500 font-pocketCalculator'>
             {song.name}
