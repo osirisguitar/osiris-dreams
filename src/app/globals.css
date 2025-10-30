@@ -55,3 +55,9 @@ video {
   font-family: 'pocket-calculator';
   src: url('/pocket_calcuatlor_ot.otf');
 }
+
+@font-face {
+  font-family: 'pilot-command';
+  src: url('/PilotCommand-3zn93.otf');
+}
+

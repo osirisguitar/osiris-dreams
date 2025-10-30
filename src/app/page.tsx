@@ -4,7 +4,7 @@ import { SomePromo } from './components/somePromo'
 import { SongPromo } from './components/songPromo'
 import { Heading } from './components/heading'
 import { init } from '@socialgouv/matomo-next'
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect } from 'react'
 import { songsAndAlbums } from './data/songsAndAlbums'
 import { PlayerContext } from './components/playerContext'
 import { push } from '@socialgouv/matomo-next'
@@ -31,6 +31,12 @@ export default function Home() {
 
   return (
     <>
+      <style>
+        {`
+.swiper {
+  z-index: 0;
+}`}
+      </style>
       <div className='lg:max-w-5xl max-w-[70%] items-center justify-between font-mono text-sm lg:flex lg:pt-5'>
         <Link href='/'>
           <Image
@@ -62,7 +68,7 @@ export default function Home() {
           autoplay={{ delay: 2000 }}
           pagination={{ clickable: true }}
           modules={[EffectCoverflow, Autoplay]}
-          className='mySwiper'
+          className='mySwiper z-0'
         >
           {songsAndAlbums &&
             Object.keys(songsAndAlbums).map((songName) => {
