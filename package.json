@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "-": "^0.0.1",
     "@datapunt/matomo-tracker-react": "^0.5.1",
     "@socialgouv/matomo-next": "^1.9.2",
+    "baseline-browser-mapping": "^2.8.30",
     "hamburger-react": "^2.5.1",
     "next": "15.5.3",
     "react": "latest",
