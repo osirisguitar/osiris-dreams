@@ -13,7 +13,8 @@ export default async function Page({
     name: songsAndAlbums[song].name,
     services: {
       spotify: songsAndAlbums[song].services.spotify,
-      applemusic: songsAndAlbums[song].services.applemusic,
+      youtube: songsAndAlbums[song].services.youtube,
+      bandcamp: songsAndAlbums[song].services.bandcamp,
     },
   }
 

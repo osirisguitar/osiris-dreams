@@ -1,16 +1,71 @@
 'use client'
 import Image from 'next/image'
-import { init } from '@socialgouv/matomo-next'
+import { init, push } from '@socialgouv/matomo-next'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { Song } from '../common/types'
 
 export const SongLandingPage = ({ song }: { song: Song }) => {
-  const setClickedService = useState<string | null>(null)[1]
+  const [clickedService, setClickedService] = useState<string | null>(null)
 
   useEffect(() => {
     init({ url: 'https://matomo.bornholm.se/', siteId: '2' })
   }, [])
+
+  useEffect(() => {
+    if (clickedService) {
+      push(['trackEvent', 'song', song.name, clickedService])
+      import('react-facebook-pixel')
+        .then((x) => x.default)
+        .then((ReactPixel) => {
+          ReactPixel.init('1618294722414496')
+          console.log('fbq', song.name, clickedService)
+          ReactPixel.trackCustom('ViewContent', {
+            content_name: song.name,
+            content_category: clickedService,
+          })
+        })
+
+      // Load the Pixel script only if it's not already loaded
+      const anyWindow = window as any
+      if (!anyWindow.fbq) {
+        ;(function (f, b, e, v, n, t, s) {
+          const fAny = f as any
+          let nAny = n as any
+          if (fAny.fbq) return
+          nAny = fAny.fbq = function () {
+            nAny.callMethod
+              ? nAny.callMethod.apply(nAny, arguments)
+              : nAny.queue.push(arguments)
+          }
+          if (!fAny._fbq) fAny._fbq = nAny
+          nAny.push = nAny
+          nAny.loaded = !0
+          nAny.version = '2.0'
+          nAny.queue = []
+          let tAny = t as any
+          tAny = b.createElement(e)
+          tAny.async = !0
+          tAny.src = v
+          let sAny = s as any
+          sAny = b.getElementsByTagName(e)[0]
+          sAny.parentNode.insertBefore(tAny, sAny)
+        })(
+          window,
+          document,
+          'script',
+          'https://connect.facebook.net/en_US/fbevents.js'
+        )
+
+        // Initialize Facebook Pixel
+        anyWindow.fbq('init', '1618294722414496')
+      }
+      anyWindow.fbq('track', 'StreamSong', {
+        content_name: song.name,
+        content_category: clickedService,
+      })
+    }
+  }, [song, clickedService])
 
   const trackStreaming = (serviceName: string) => {
     setClickedService(serviceName)
