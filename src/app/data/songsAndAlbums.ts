@@ -1,6 +1,34 @@
 import { Song } from '../common/types'
 
 export const songsAndAlbums: Record<string, Song> = {
+  'age-of-anomalies': {
+    id: 'age-of-anomalies',
+    name: 'Age of Anomalies',
+    fileName: 'OSIRIS DREAMS - Alterverse - 01 Age of Anomalies',
+    albumCover: 'alterverse',
+    services: {
+      spotify: {
+        url: 'https://open.spotify.com/track/174FCCm1IXGQHqQxQMdJfr?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
+        linkText: 'Stream on Spotify >',
+      },
+      bandcamp: {
+        url: 'https://osirisdreams.bandcamp.com/track/age-of-anomalies',
+        linkText: 'Buy or stream on BandCamp >',
+      },
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=lwn20SruZMs&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=1',
+        linkText: 'Music video on YouTube >',
+      },
+      applemusic: {
+        url: 'https://music.apple.com/se/album/age-of-anomalies-single/1853226084?app=music',
+        linkText: 'Buy or stream on Apple Music >',
+      },
+      'youtube-music': {
+        url: 'https://music.youtube.com/watch?v=0hBESWY4b08',
+        linkText: 'Stream on YouTube Music >',
+      },
+    },
+  },
   'the-encounter': {
     id: 'the-encounter',
     name: 'The Encounter',

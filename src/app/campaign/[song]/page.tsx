@@ -11,6 +11,7 @@ export default async function Page({
   const campaignSong = {
     id: songsAndAlbums[song].id,
     name: songsAndAlbums[song].name,
+    albumCover: songsAndAlbums[song].albumCover,
     services: {
       spotify: songsAndAlbums[song].services.spotify,
       youtube: songsAndAlbums[song].services.youtube,
