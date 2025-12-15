@@ -1,6 +1,34 @@
 import { Song } from '../common/types'
 
 export const songsAndAlbums: Record<string, Song> = {
+  'ghost-pod': {
+    id: 'ghost-pod',
+    name: 'Ghost Pod',
+    fileName: 'OSIRIS DREAMS - Alterverse - 02 Ghost Pod',
+    albumCover: 'alterverse',
+    services: {
+      spotify: {
+        url: 'https://open.spotify.com/track/52TAiqzdrlbxow9mrnUPb9?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
+        linkText: 'Stream on Spotify >',
+      },
+      bandcamp: {
+        url: 'https://osirisdreams.bandcamp.com/track/ghost-pod',
+        linkText: 'Buy or stream on BandCamp >',
+      },
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=GToZu8Jl8u4&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
+        linkText: 'Music video on YouTube >',
+      },
+      applemusic: {
+        url: 'https://music.apple.com/us/album/ghost-pod-single/1857973243?app=music',
+        linkText: 'Buy or stream on Apple Music >',
+      },
+      'youtube-music': {
+        url: 'https://music.youtube.com/watch?v=AWdWvr0vu10',
+        linkText: 'Stream on YouTube Music >',
+      },
+    },
+  },
   'age-of-anomalies': {
     id: 'age-of-anomalies',
     name: 'Age of Anomalies',
@@ -20,7 +48,7 @@ export const songsAndAlbums: Record<string, Song> = {
         linkText: 'Music video on YouTube >',
       },
       applemusic: {
-        url: 'https://music.apple.com/se/album/age-of-anomalies-single/1853226084?app=music',
+        url: 'https://music.apple.com/us/album/age-of-anomalies-single/1853226084?app=music',
         linkText: 'Buy or stream on Apple Music >',
       },
       'youtube-music': {
@@ -47,7 +75,7 @@ export const songsAndAlbums: Record<string, Song> = {
         linkText: 'Music video on YouTube >',
       },
       applemusic: {
-        url: 'https://music.apple.com/se/album/the-encounter-single/1795008798?app=music',
+        url: 'https://music.apple.com/us/album/the-encounter-single/1795008798?app=music',
         linkText: 'Buy or stream on Apple Music >',
       },
       'youtube-music': {
@@ -74,7 +102,7 @@ export const songsAndAlbums: Record<string, Song> = {
         linkText: 'Music video on YouTube >',
       },
       applemusic: {
-        url: 'https://music.apple.com/se/album/dark-city-single/1776912551?app=music',
+        url: 'https://music.apple.com/us/album/dark-city-single/1776912551?app=music',
         linkText: 'Buy or stream on Apple Music >',
       },
       'youtube-music': {
@@ -105,7 +133,7 @@ export const songsAndAlbums: Record<string, Song> = {
         linkText: 'Music video on YouTube >',
       },
       applemusic: {
-        url: 'https://music.apple.com/se/album/hyper-dimensional-racing-single/1762564284?app=music',
+        url: 'https://music.apple.com/us/album/hyper-dimensional-racing-single/1762564284?app=music',
         linkText: 'Buy or stream on Apple Music >',
       },
       'youtube-music': {
@@ -132,7 +160,7 @@ export const songsAndAlbums: Record<string, Song> = {
         linkText: 'Buy or stream on BandCamp >',
       },
       applemusic: {
-        url: 'https://music.apple.com/se/album/driving-alone/1661704156?app=music',
+        url: 'https://music.apple.com/us/album/driving-alone/1661704156?app=music',
         linkText: 'Buy or stream on Apple Music >',
       },
       youtube: {
@@ -165,7 +193,7 @@ export const songsAndAlbums: Record<string, Song> = {
         linkText: 'Buy or stream on BandCamp >',
       },
       applemusic: {
-        url: 'https://music.apple.com/se/album/biomechanoid-prototype/1740412260?i=1740412261&app=music',
+        url: 'https://music.apple.com/us/album/biomechanoid-prototype/1740412260?i=1740412261&app=music',
         linkText: 'Buy or stream on Apple Music >',
       },
       youtube: {
@@ -198,7 +226,7 @@ export const songsAndAlbums: Record<string, Song> = {
         linkText: 'Buy or stream on BandCamp >',
       },
       applemusic: {
-        url: 'https://music.apple.com/se/album/emerging-sentience/1740412260?i=1740412262&app=music',
+        url: 'https://music.apple.com/us/album/emerging-sentience/1740412260?i=1740412262&app=music',
         linkText: 'Buy or stream on Apple Music >',
       },
       youtube: {
@@ -231,7 +259,7 @@ export const songsAndAlbums: Record<string, Song> = {
         linkText: 'Buy or stream on BandCamp >',
       },
       applemusic: {
-        url: 'https://music.apple.com/se/album/escape-from-cybergenix/1740412260?i=1740412263&app=music',
+        url: 'https://music.apple.com/us/album/escape-from-cybergenix/1740412260?i=1740412263&app=music',
         linkText: 'Buy or stream on Apple Music >',
       },
       youtube: {
@@ -264,7 +292,7 @@ export const songsAndAlbums: Record<string, Song> = {
         linkText: 'Buy or stream on BandCamp >',
       },
       applemusic: {
-        url: 'https://music.apple.com/se/album/sanctuary-cover-up/1740412260?i=1740412264&app=music',
+        url: 'https://music.apple.com/us/album/sanctuary-cover-up/1740412260?i=1740412264&app=music',
         linkText: 'Buy or stream on Apple Music >',
       },
       youtube: {
@@ -326,7 +354,7 @@ export const songsAndAlbums: Record<string, Song> = {
         linkText: 'Buy or stream on BandCamp >',
       },
       applemusic: {
-        url: 'https://music.apple.com/se/album/3-am-6502-debugging-single/1700141452?app=music',
+        url: 'https://music.apple.com/us/album/3-am-6502-debugging-single/1700141452?app=music',
         linkText: 'Buy or stream on Apple Music >',
       },
       youtube: {
@@ -353,7 +381,7 @@ export const songsAndAlbums: Record<string, Song> = {
         linkText: 'Buy or stream on BandCamp >',
       },
       applemusic: {
-        url: 'https://music.apple.com/se/album/light-cycle-arena-single/1680362586?app=music',
+        url: 'https://music.apple.com/us/album/light-cycle-arena-single/1680362586?app=music',
         linkText: 'Buy or stream on Apple Music >',
       },
       youtube: {
@@ -384,7 +412,7 @@ export const songsAndAlbums: Record<string, Song> = {
         linkText: 'Buy or stream on BandCamp >',
       },
       applemusic: {
-        url: 'https://music.apple.com/se/album/hyperspace-sunday-cruise-single/1656225285?app=itunes',
+        url: 'https://music.apple.com/us/album/hyperspace-sunday-cruise-single/1656225285?app=itunes',
         linkText: 'Buy or stream on Apple Music >',
       },
       youtube: {
