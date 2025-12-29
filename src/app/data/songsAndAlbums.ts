@@ -1,6 +1,34 @@
 import { Song } from '../common/types'
 
 export const songsAndAlbums: Record<string, Song> = {
+  'hyper-probe': {
+    id: 'hyper-probe',
+    name: 'Hyper Probe',
+    fileName: 'OSIRIS DREAMS - Alterverse - 03 Hyper Probe',
+    albumCover: 'alterverse',
+    services: {
+      spotify: {
+        url: 'https://open.spotify.com/track/7DcaLUIXIDEQr1BydYpGX2?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
+        linkText: 'Stream on Spotify >',
+      },
+      bandcamp: {
+        url: 'https://osirisdreams.bandcamp.com/track/hyper-probe',
+        linkText: 'Buy or stream on BandCamp >',
+      },
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=GlB3zEEPM98&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=3',
+        linkText: 'Music video on YouTube >',
+      },
+      applemusic: {
+        url: 'https://music.apple.com/us/album/hyper-probe-single/1862613373?app=music',
+        linkText: 'Buy or stream on Apple Music >',
+      },
+      'youtube-music': {
+        url: 'https://music.youtube.com/watch?v=KiVMLqHI8jQ&list=PLhh3NWTMqXSQ6Ij-UhPE7jRzm0BpoQNtf',
+        linkText: 'Stream on YouTube Music >',
+      },
+    },
+  },
   'ghost-pod': {
     id: 'ghost-pod',
     name: 'Ghost Pod',
