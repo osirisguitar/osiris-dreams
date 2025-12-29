@@ -26,7 +26,7 @@ export default function Bio() {
         </Link>
       </div>
 
-      <div className='max-w-5xl'>
+      <div className='max-w-5xl lg-mt[-50px]'>
         <TextBox display='block'>
           <Heading style='h1' text='Biography' />
           <Image

@@ -51,7 +51,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <Heading id='songs-albums' text='Songs' style='h1' />
+      <Heading id='songs-albums' text='Songs' style='h1' css='lg:pt-[50px]' />
       <div className='lg:max-w-5xl max-w-[90%]'>
         <Swiper
           effect={'coverflow'}
@@ -89,7 +89,12 @@ export default function Home() {
         </Swiper>
       </div>
 
-      <Heading id='stream' text='Streaming Services' style='h1' />
+      <Heading
+        id='stream'
+        text='Streaming Services'
+        style='h1'
+        css='lg:pt-[50px]'
+      />
 
       <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:text-left'>
         <SomePromo
@@ -118,7 +123,7 @@ export default function Home() {
         />
       </div>
 
-      <Heading id='buy' text='Music Stores' style='h1' />
+      <Heading id='buy' text='Music Stores' style='h1' css='lg:pt-[50px]' />
 
       <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:text-left'>
         <SomePromo
@@ -135,7 +140,12 @@ export default function Home() {
         />
       </div>
 
-      <Heading id='social-media' text='Social Media' style='h1' />
+      <Heading
+        id='social-media'
+        text='Social Media'
+        style='h1'
+        css='lg:pt-[50px]'
+      />
       <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-2 lg:grid-cols-4 lg:text-left'>
         <SomePromo
           logo='/tiktok-icon.svg'
@@ -163,7 +173,7 @@ export default function Home() {
         />
       </div>
 
-      <Heading id='contact' text='Contact' style='h1' />
+      <Heading id='contact' text='Contact' style='h1' css='lg:pt-[50px]' />
       <div className='font-mono mt-3 mb-10'>
         Email:{' '}
         <Link href='mailto:osiris@osirisdreams.com'>

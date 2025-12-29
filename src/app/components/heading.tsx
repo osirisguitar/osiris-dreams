@@ -1,10 +1,12 @@
 export const Heading = ({
   text,
   style,
+  css,
   id,
 }: {
   text: string
   style: string
+  css?: string
   id?: string
 }) => {
   let classFront = 'font-pilotCommand uppercase '
@@ -15,11 +17,11 @@ export const Heading = ({
   switch (style) {
     case 'h1':
       classFront += ' py-4 px-3 text-3xl md:text-5xl text-blue-300 '
-      classWrapper += ' lg:pt-[50px] sm:mt-0'
+      classWrapper += 'sm:mt-0'
       break
     case 'h2':
       classFront += ' px-3 text-xl md:text-2xl text-blue-300 '
-      classWrapper += ' lg:pt-[50px] sm:mt-0'
+      classWrapper += 'sm:mt-0'
       break
     case 'h3':
       classFront += ' text-xs md:text-base text-blue-300 '
@@ -29,7 +31,7 @@ export const Heading = ({
   }
 
   return (
-    <div id={id} className={classWrapper}>
+    <div id={id} className={classWrapper + ' ' + css}>
       <div className='flex'>
         <h2 className={classFront}>{text}</h2>
       </div>
