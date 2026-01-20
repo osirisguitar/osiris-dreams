@@ -19,8 +19,16 @@ export const Heading = ({
       classFront += ' py-4 px-3 text-3xl md:text-5xl text-blue-300 '
       classWrapper += 'sm:mt-0'
       break
+    case 'h1-pink':
+      classFront += ' py-4 px-3 text-3xl md:text-5xl text-pink-500 '
+      classWrapper += 'sm:mt-0'
+      break
     case 'h2':
       classFront += ' px-3 text-xl md:text-2xl text-blue-300 '
+      classWrapper += 'sm:mt-0'
+      break
+    case 'h2-pink':
+      classFront += ' px-3 text-xl md:text-2xl text-pink-500 '
       classWrapper += 'sm:mt-0'
       break
     case 'h3':
