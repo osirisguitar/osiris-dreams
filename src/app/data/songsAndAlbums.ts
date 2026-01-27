@@ -1,30 +1,30 @@
 import { Song } from '../common/types'
 
 export const songsAndAlbums: Record<string, Song> = {
-  'hyper-probe': {
-    id: 'hyper-probe',
-    name: 'Hyper Probe',
-    fileName: 'OSIRIS DREAMS - Alterverse - 03 Hyper Probe',
+  'age-of-anomalies': {
+    id: 'age-of-anomalies',
+    name: 'Age of Anomalies',
+    fileName: 'OSIRIS DREAMS - Alterverse - 01 Age of Anomalies',
     albumCover: 'alterverse',
     services: {
-      spotify: {
-        url: 'https://open.spotify.com/track/7DcaLUIXIDEQr1BydYpGX2?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
-        linkText: 'Stream on Spotify >',
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=lwn20SruZMs&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=1',
+        linkText: 'Lyric music video on YouTube >',
       },
       bandcamp: {
-        url: 'https://osirisdreams.bandcamp.com/track/hyper-probe',
+        url: 'https://osirisdreams.bandcamp.com/track/age-of-anomalies',
         linkText: 'Buy or stream on BandCamp >',
       },
-      youtube: {
-        url: 'https://www.youtube.com/watch?v=GlB3zEEPM98&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=3',
-        linkText: 'Music video on YouTube >',
+      spotify: {
+        url: 'https://open.spotify.com/track/174FCCm1IXGQHqQxQMdJfr?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
+        linkText: 'Stream on Spotify >',
       },
       applemusic: {
-        url: 'https://music.apple.com/us/album/hyper-probe-single/1862613373?app=music',
+        url: 'https://music.apple.com/us/album/age-of-anomalies/1868438504?app=music',
         linkText: 'Buy or stream on Apple Music >',
       },
       'youtube-music': {
-        url: 'https://music.youtube.com/watch?v=KiVMLqHI8jQ&list=PLhh3NWTMqXSQ6Ij-UhPE7jRzm0BpoQNtf',
+        url: 'https://music.youtube.com/watch?v=lwn20SruZMs',
         linkText: 'Stream on YouTube Music >',
       },
     },
@@ -35,52 +35,248 @@ export const songsAndAlbums: Record<string, Song> = {
     fileName: 'OSIRIS DREAMS - Alterverse - 02 Ghost Pod',
     albumCover: 'alterverse',
     services: {
-      spotify: {
-        url: 'https://open.spotify.com/track/52TAiqzdrlbxow9mrnUPb9?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
-        linkText: 'Stream on Spotify >',
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=GToZu8Jl8u4&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
+        linkText: 'Lyric music video on YouTube >',
       },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/ghost-pod',
         linkText: 'Buy or stream on BandCamp >',
       },
-      youtube: {
-        url: 'https://www.youtube.com/watch?v=GToZu8Jl8u4&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
-        linkText: 'Music video on YouTube >',
+      spotify: {
+        url: 'https://open.spotify.com/track/52TAiqzdrlbxow9mrnUPb9?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
+        linkText: 'Stream on Spotify >',
       },
       applemusic: {
-        url: 'https://music.apple.com/us/album/ghost-pod-single/1857973243?app=music',
+        url: 'https://music.apple.com/us/album/ghost-pod/1868438504?app=music',
         linkText: 'Buy or stream on Apple Music >',
       },
       'youtube-music': {
-        url: 'https://music.youtube.com/watch?v=AWdWvr0vu10',
+        url: 'https://music.youtube.com/watch?v=GToZu8Jl8u4',
         linkText: 'Stream on YouTube Music >',
       },
     },
   },
-  'age-of-anomalies': {
-    id: 'age-of-anomalies',
-    name: 'Age of Anomalies',
-    fileName: 'OSIRIS DREAMS - Alterverse - 01 Age of Anomalies',
+  'hyper-probe': {
+    id: 'hyper-probe',
+    name: 'Hyper Probe',
+    fileName: 'OSIRIS DREAMS - Alterverse - 03 Hyper Probe',
     albumCover: 'alterverse',
     services: {
-      spotify: {
-        url: 'https://open.spotify.com/track/174FCCm1IXGQHqQxQMdJfr?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
-        linkText: 'Stream on Spotify >',
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=GlB3zEEPM98&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=3',
+        linkText: 'Lyric music video on YouTube >',
       },
       bandcamp: {
-        url: 'https://osirisdreams.bandcamp.com/track/age-of-anomalies',
+        url: 'https://osirisdreams.bandcamp.com/track/hyper-probe',
         linkText: 'Buy or stream on BandCamp >',
       },
-      youtube: {
-        url: 'https://www.youtube.com/watch?v=lwn20SruZMs&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=1',
-        linkText: 'Music video on YouTube >',
+      spotify: {
+        url: 'https://open.spotify.com/track/7DcaLUIXIDEQr1BydYpGX2?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
+        linkText: 'Stream on Spotify >',
       },
       applemusic: {
-        url: 'https://music.apple.com/us/album/age-of-anomalies-single/1853226084?app=music',
+        url: 'https://music.apple.com/us/album/hyper-probe/1868438504?app=music',
         linkText: 'Buy or stream on Apple Music >',
       },
       'youtube-music': {
-        url: 'https://music.youtube.com/watch?v=0hBESWY4b08',
+        url: 'https://music.youtube.com/watch?v=GlB3zEEPM98',
+        linkText: 'Stream on YouTube Music >',
+      },
+    },
+  },
+  'interrupt-sequence': {
+    id: 'interrupt-sequence',
+    name: 'Interrupt Sequence',
+    fileName: 'OSIRIS DREAMS - Alterverse - 04 Interrupt Sequence',
+    albumCover: 'alterverse',
+    services: {
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=XUDAMOQAr-A&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
+        linkText: 'Lyric music video on YouTube >',
+      },
+      bandcamp: {
+        url: 'https://osirisdreams.bandcamp.com/track/interrupt-sequence',
+        linkText: 'Buy or stream on BandCamp >',
+      },
+      spotify: {
+        url: 'https://open.spotify.com/track/7A6lw02oiTCtHZAimaX6ej?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
+        linkText: 'Stream on Spotify >',
+      },
+      applemusic: {
+        url: 'https://music.apple.com/us/album/interrupt-sequence/1868438504?app=music',
+        linkText: 'Buy or stream on Apple Music >',
+      },
+      'youtube-music': {
+        url: 'https://music.youtube.com/watch?v=XUDAMOQAr-A',
+        linkText: 'Stream on YouTube Music >',
+      },
+    },
+  },
+  'requiem-pro-phasmata': {
+    id: 'requiem-pro-phasmata',
+    name: 'Requiem pro Phasmata',
+    fileName: 'OSIRIS DREAMS - Alterverse - 05 Requiem pro Phasmata',
+    albumCover: 'alterverse',
+    services: {
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=LV596Sq2owY&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
+        linkText: 'Lyric music video on YouTube >',
+      },
+      bandcamp: {
+        url: 'https://osirisdreams.bandcamp.com/track/requiem-pro-phasmata',
+        linkText: 'Buy or stream on BandCamp >',
+      },
+      spotify: {
+        url: 'https://open.spotify.com/track/6g2y6BJcbrgUIeGcU8GeyK?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
+        linkText: 'Stream on Spotify >',
+      },
+      applemusic: {
+        url: 'https://music.apple.com/us/album/requiem-pro-phantasma/1868438504?app=music',
+        linkText: 'Buy or stream on Apple Music >',
+      },
+      'youtube-music': {
+        url: 'https://music.youtube.com/watch?v=LV596Sq2owY',
+        linkText: 'Stream on YouTube Music >',
+      },
+    },
+  },
+  smokescreen: {
+    id: 'smokescreen',
+    name: 'Smokescreen',
+    fileName: 'OSIRIS DREAMS - Alterverse - 06 Smokescreen',
+    albumCover: 'alterverse',
+    services: {
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=jIb7yCIzHvE&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
+        linkText: 'Lyric music video on YouTube >',
+      },
+      bandcamp: {
+        url: 'https://osirisdreams.bandcamp.com/track/smokescreen',
+        linkText: 'Buy or stream on BandCamp >',
+      },
+      spotify: {
+        url: 'https://open.spotify.com/track/3yHCkKhPZTGQpYzWMlh0tV?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
+        linkText: 'Stream on Spotify >',
+      },
+      applemusic: {
+        url: 'https://music.apple.com/us/album/smokescreen/1868438504?app=music',
+        linkText: 'Buy or stream on Apple Music >',
+      },
+      'youtube-music': {
+        url: 'https://music.youtube.com/watch?v=jIb7yCIzHvE',
+        linkText: 'Stream on YouTube Music >',
+      },
+    },
+  },
+  'revelation-protocol': {
+    id: 'revelation-protocol',
+    name: 'Revelation Protocol',
+    fileName: 'OSIRIS DREAMS - Alterverse - 07 Revelation Protocol',
+    albumCover: 'alterverse',
+    services: {
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=8YPOE6Sa4gs&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
+        linkText: 'Lyric music video on YouTube >',
+      },
+      bandcamp: {
+        url: 'https://osirisdreams.bandcamp.com/track/revelation-protocol',
+        linkText: 'Buy or stream on BandCamp >',
+      },
+      spotify: {
+        url: 'https://open.spotify.com/track/3oYSfg1ljYjxSdO0eC7hrH?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
+        linkText: 'Stream on Spotify >',
+      },
+      applemusic: {
+        url: 'https://music.apple.com/us/album/revelation-protocol/1868438504?app=music',
+        linkText: 'Buy or stream on Apple Music >',
+      },
+      'youtube-music': {
+        url: 'https://music.youtube.com/watch?v=8YPOE6Sa4gs',
+        linkText: 'Stream on YouTube Music >',
+      },
+    },
+  },
+  disassembly: {
+    id: 'disassembly',
+    name: 'Disassembly',
+    fileName: 'OSIRIS DREAMS - Alterverse - 08 Disassembly',
+    albumCover: 'alterverse',
+    services: {
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=vsKxzLwZf0w&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
+        linkText: 'Lyric music video on YouTube >',
+      },
+      bandcamp: {
+        url: 'https://osirisdreams.bandcamp.com/track/disassembly',
+        linkText: 'Buy or stream on BandCamp >',
+      },
+      spotify: {
+        url: 'https://open.spotify.com/track/2JFBsuIP1u2VxaYzCJpMel?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
+        linkText: 'Stream on Spotify >',
+      },
+      applemusic: {
+        url: 'https://music.apple.com/us/album/disassembly/1868438504?app=music',
+        linkText: 'Buy or stream on Apple Music >',
+      },
+      'youtube-music': {
+        url: 'https://music.youtube.com/watch?v=vsKxzLwZf0w',
+        linkText: 'Stream on YouTube Music >',
+      },
+    },
+  },
+  'vortex-beach': {
+    id: 'vortex-beach',
+    name: 'Vortex Beach',
+    fileName: 'OSIRIS DREAMS - Alterverse - 09 Vortex Beach',
+    albumCover: 'alterverse',
+    services: {
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=GDDJ13JUQL0&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
+        linkText: 'Lyric music video on YouTube >',
+      },
+      bandcamp: {
+        url: 'https://osirisdreams.bandcamp.com/track/vortex-beach',
+        linkText: 'Buy or stream on BandCamp >',
+      },
+      spotify: {
+        url: 'https://open.spotify.com/track/2KhS44sbVc46gxkbjKwSWi?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
+        linkText: 'Stream on Spotify >',
+      },
+      applemusic: {
+        url: 'https://music.apple.com/us/album/vortex-beach/1868438504?app=music',
+        linkText: 'Buy or stream on Apple Music >',
+      },
+      'youtube-music': {
+        url: 'https://music.youtube.com/watch?v=GDDJ13JUQL0',
+        linkText: 'Stream on YouTube Music >',
+      },
+    },
+  },
+  'ghost-testimony': {
+    id: 'ghost-testimony',
+    name: 'Ghost Testimony',
+    fileName: 'OSIRIS DREAMS - Alterverse - 10 Ghost Testimony',
+    albumCover: 'alterverse',
+    services: {
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=_07C_qHcAnA&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
+        linkText: 'Lyric music video on YouTube >',
+      },
+      bandcamp: {
+        url: 'https://osirisdreams.bandcamp.com/track/ghost-testimony',
+        linkText: 'Buy or stream on BandCamp >',
+      },
+      spotify: {
+        url: 'https://open.spotify.com/track/41AsPdXBdGZH0dKqAO8486?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
+        linkText: 'Stream on Spotify >',
+      },
+      applemusic: {
+        url: 'https://music.apple.com/us/album/ghost-testimony/1868438504?app=music',
+        linkText: 'Buy or stream on Apple Music >',
+      },
+      'youtube-music': {
+        url: 'https://music.youtube.com/watch?v=_07C_qHcAnA',
         linkText: 'Stream on YouTube Music >',
       },
     },

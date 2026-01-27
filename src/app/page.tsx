@@ -52,11 +52,6 @@ export default function Home() {
         </Link>
       </div>
 
-      <Countdown
-        date={'2026-01-27T10:00Z'}
-        text='Alterverse - January 27'
-      ></Countdown>
-
       <Heading id='songs-albums' text='Songs' style='h1' css='lg:pt-[50px]' />
       <div className='lg:max-w-5xl max-w-[90%]'>
         <Swiper
