@@ -54,7 +54,7 @@ export const SongLandingPage = ({ song }: { song: Song }) => {
           window,
           document,
           'script',
-          'https://connect.facebook.net/en_US/fbevents.js'
+          'https://connect.facebook.net/en_US/fbevents.js',
         )
 
         // Initialize Facebook Pixel
@@ -95,7 +95,7 @@ export const SongLandingPage = ({ song }: { song: Song }) => {
         style={{
           marginLeft: 'auto',
           marginRight: 'auto',
-          marginTop: '80px',
+          marginTop: '30px',
           maxWidth: '500px',
           padding: 0,
         }}
@@ -104,20 +104,22 @@ export const SongLandingPage = ({ song }: { song: Song }) => {
           className='font-pocketCalculator uppercase text-green-500 text-4xl mb-4 text-center'
           style={{
             backgroundColor: 'rgba(0,0,0,0.5)',
-            maxWidth: '90vw',
+            //maxWidth: '90vw',
           }}
         >
           {song.name}
         </div>
-        <Image
-          src={`/${song.albumCover ?? song.id}-album-cover.png`}
-          width='500'
-          height='500'
-          alt='Album cover'
-          className={streamingClass}
-          style={{ maxWidth: '90vw' }}
-          priority
-        ></Image>
+        <a href={song.services[Object.keys(song.services)[0]].url}>
+          <Image
+            src={`/${song.albumCover ?? song.id}-album-cover.png`}
+            width='500'
+            height='500'
+            alt='Album cover'
+            className={streamingClass}
+            style={{ maxWidth: '90vw' }}
+            priority
+          ></Image>
+        </a>
         {Object.keys(song.services).map((serviceName) => {
           return (
             <div
