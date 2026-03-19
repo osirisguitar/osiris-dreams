@@ -185,6 +185,11 @@ export default function Home() {
         <Link rel='me' target='_blank' href='https://mastodon.nu/@osiris'>
           @osiris@mastodon.nu
         </Link>
+        <br />
+        Unstream:{' '}
+        <Link target='_blank' href='https://unstream.stream/a/osiris-dreams'>
+          OSIRIS DREAMS
+        </Link>
       </div>
     </>
   )
