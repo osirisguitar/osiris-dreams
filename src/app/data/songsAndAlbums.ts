@@ -412,6 +412,10 @@ export const songsAndAlbums: Record<string, Song> = {
         url: 'https://open.spotify.com/track/3bppcQYamAos9j7GTkdb7f?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
         linkText: 'Stream on Spotify >',
       },
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=lriT9Y8kqTg&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=1',
+        linkText: 'Music videos on YouTube >',
+      },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/biomechanoid-prototype',
         linkText: 'Buy or stream on BandCamp >',
@@ -419,10 +423,6 @@ export const songsAndAlbums: Record<string, Song> = {
       applemusic: {
         url: 'https://music.apple.com/us/album/biomechanoid-prototype/1740412260?i=1740412261&app=music',
         linkText: 'Buy or stream on Apple Music >',
-      },
-      youtube: {
-        url: 'https://www.youtube.com/watch?v=lriT9Y8kqTg&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=1',
-        linkText: 'Music videos on YouTube >',
       },
       'youtube-music': {
         url: 'https://music.youtube.com/watch?v=4iDud38SYVM&list=OLAK5uy_njvdl0C8IQ1f4QbATtb8G1-Bx95EZkPcY',
@@ -445,6 +445,10 @@ export const songsAndAlbums: Record<string, Song> = {
         url: 'https://open.spotify.com/track/4neYjnNW2fg9qxBHPWq1Bl?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
         linkText: 'Stream on Spotify >',
       },
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=-ebGoJhwjeg&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=2',
+        linkText: 'Music videos on YouTube >',
+      },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/emerging-sentience',
         linkText: 'Buy or stream on BandCamp >',
@@ -452,10 +456,6 @@ export const songsAndAlbums: Record<string, Song> = {
       applemusic: {
         url: 'https://music.apple.com/us/album/emerging-sentience/1740412260?i=1740412262&app=music',
         linkText: 'Buy or stream on Apple Music >',
-      },
-      youtube: {
-        url: 'https://www.youtube.com/watch?v=-ebGoJhwjeg&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=2',
-        linkText: 'Music videos on YouTube >',
       },
       'youtube-music': {
         url: 'https://music.youtube.com/watch?v=-ebGoJhwjeg&list=OLAK5uy_njvdl0C8IQ1f4QbATtb8G1-Bx95EZkPcY',
@@ -478,6 +478,10 @@ export const songsAndAlbums: Record<string, Song> = {
         url: 'https://open.spotify.com/track/0pXCe1S9b526l8gtZCovu2?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
         linkText: 'Stream on Spotify >',
       },
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=EzlmPCJPqDs&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=3',
+        linkText: 'Music videos on YouTube >',
+      },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/emerging-sentience',
         linkText: 'Buy or stream on BandCamp >',
@@ -485,10 +489,6 @@ export const songsAndAlbums: Record<string, Song> = {
       applemusic: {
         url: 'https://music.apple.com/us/album/escape-from-cybergenix/1740412260?i=1740412263&app=music',
         linkText: 'Buy or stream on Apple Music >',
-      },
-      youtube: {
-        url: 'https://www.youtube.com/watch?v=EzlmPCJPqDs&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=3',
-        linkText: 'Music videos on YouTube >',
       },
       'youtube-music': {
         url: 'https://music.youtube.com/watch?v=OM_waUyoUF0&list=OLAK5uy_njvdl0C8IQ1f4QbATtb8G1-Bx95EZkPcY',
@@ -511,6 +511,10 @@ export const songsAndAlbums: Record<string, Song> = {
         url: 'https://open.spotify.com/track/5SdRFN6ufTcgQJIYIaxt49?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
         linkText: 'Stream on Spotify >',
       },
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=6iN0XdYOonE&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=4',
+        linkText: 'Music videos on YouTube >',
+      },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/sanctuary-cover-up',
         linkText: 'Buy or stream on BandCamp >',
@@ -518,10 +522,6 @@ export const songsAndAlbums: Record<string, Song> = {
       applemusic: {
         url: 'https://music.apple.com/us/album/sanctuary-cover-up/1740412260?i=1740412264&app=music',
         linkText: 'Buy or stream on Apple Music >',
-      },
-      youtube: {
-        url: 'https://www.youtube.com/watch?v=6iN0XdYOonE&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=4',
-        linkText: 'Music videos on YouTube >',
       },
       'youtube-music': {
         url: 'https://music.youtube.com/watch?v=6iN0XdYOonE&list=OLAK5uy_njvdl0C8IQ1f4QbATtb8G1-Bx95EZkPcY',
