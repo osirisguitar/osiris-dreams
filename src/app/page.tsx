@@ -53,6 +53,8 @@ export default function Home() {
         </Link>
       </div>
 
+      <Heading text='Cinematic Synthwave from Sweden' style='h2' />
+
       <div className='relative w-[90%] max-w-[800px] h-0 pb-[min(50.625%,450px)] mt-5'>
         <iframe
           className='absolute top-0 left-0 w-full h-full'
