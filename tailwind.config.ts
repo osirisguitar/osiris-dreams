@@ -28,7 +28,6 @@ const config: Config = {
   plugins: [
     require('@tailwindcss/aspect-ratio'),
     require('tailwindcss-responsive-embed'),
-    // ...
   ],
 }
 export default config

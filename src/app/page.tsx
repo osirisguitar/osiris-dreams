@@ -17,6 +17,7 @@ import 'swiper/css/autoplay'
 import { EffectCoverflow, Autoplay } from 'swiper/modules'
 import { Song } from './common/types'
 import { Countdown } from './components/countdown'
+import { TrackList } from './components/trackList'
 
 export default function Home() {
   useEffect(() => {
@@ -45,11 +46,48 @@ export default function Home() {
             alt='OSIRIS DREAMS'
             className='drop-shadow-sm p-3  pt-[65px] md:pt-3'
             style={{ filter: 'drop-shadow(5px 5px 10px #000000)' }}
-            width={500}
+            width={400}
             height={350}
             priority
           />
         </Link>
+      </div>
+
+      <div className='relative w-[90%] max-w-[800px] h-0 pb-[min(50.625%,450px)] mt-5'>
+        <iframe
+          className='absolute top-0 left-0 w-full h-full'
+          src='https://www.youtube.com/embed/su3j1V_50Wc?mute=1&autoplay=1'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowFullScreen
+        ></iframe>
+      </div>
+
+      <Heading
+        id='songs-albums'
+        text='Latest Release - Alterverse'
+        style='h1'
+        css='lg:pt-[50px]'
+      />
+      <div className='flex gap-4'>
+        <Image
+          src={
+            '/' +
+            songsAndAlbums['age-of-anomalies'].albumCover +
+            '-album-cover.png'
+          }
+          alt='{name}'
+          priority
+          className='h-[400px] max-lg:hidden'
+          width={400}
+          height={400}
+        />
+
+        <TrackList
+          songs={Object.values(songsAndAlbums).filter(
+            (song) => song.albumCover === 'alterverse',
+          )}
+          onPlay={playSong}
+        />
       </div>
 
       <Heading id='songs-albums' text='Songs' style='h1' css='lg:pt-[50px]' />

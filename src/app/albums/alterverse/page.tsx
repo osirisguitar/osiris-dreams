@@ -2,12 +2,12 @@
 import { init, push } from '@socialgouv/matomo-next'
 import { useContext, useEffect } from 'react'
 import { songsAndAlbums } from '../../data/songsAndAlbums'
-import { SongPromo } from '../../components/songPromo'
 import { PlayerContext } from '../../components/playerContext'
 import { Heading } from '../../components/heading'
 import { Song } from '../../common/types'
 import Link from 'next/link'
 import Image from 'next/image'
+import { TrackList } from '@/app/components/trackList'
 
 export default function Alterverse() {
   useEffect(() => {
@@ -15,19 +15,6 @@ export default function Alterverse() {
   }, [])
 
   const { setSong } = useContext(PlayerContext)
-
-  const songIds = [
-    'age-of-anomalies',
-    'ghost-pod',
-    'hyper-probe',
-    'interrupt-sequence',
-    'requiem-pro-phasmata',
-    'smokescreen',
-    'revelation-protocol',
-    'disassembly',
-    'vortex-beach',
-    'ghost-testimony',
-  ]
 
   const playSong = (song: Song) => {
     push(['trackEvent', 'preview', song.name])
@@ -48,17 +35,27 @@ export default function Alterverse() {
           />
         </Link>
       </div>{' '}
-      <Heading text='Songs' style='h1' />
-      <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:text-left'>
-        {songIds.map((songId) => {
-          return (
-            <SongPromo
-              song={songsAndAlbums[songId]}
-              onPlay={playSong}
-              key={songsAndAlbums[songId].name}
-            ></SongPromo>
-          )
-        })}
+      <Heading text='Alterverse' style='h1' />
+      <div className='flex gap-4 pb-20'>
+        <Image
+          src={
+            '/' +
+            songsAndAlbums['age-of-anomalies'].albumCover +
+            '-album-cover.png'
+          }
+          alt='{name}'
+          priority
+          className='h-[400px] max-lg:hidden'
+          width={400}
+          height={400}
+        />
+
+        <TrackList
+          songs={Object.values(songsAndAlbums).filter(
+            (song) => song.albumCover === 'alterverse',
+          )}
+          onPlay={playSong}
+        />
       </div>
     </>
   )
