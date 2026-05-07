@@ -70,7 +70,7 @@ export default function Home() {
         style='h1'
         css='lg:pt-[50px]'
       />
-      <div className='flex gap-4'>
+      <div className='flex gap-4 border-solid p-3 border-2 border-green-400'>
         <Image
           src={
             '/' +
