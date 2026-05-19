@@ -168,6 +168,12 @@ export default function Home() {
 
       <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:text-left'>
         <SomePromo
+          logo='/subvert-icon.svg'
+          heading='Subvert.fm'
+          body='Cooperatively owned marketplace, DRM free'
+          link='https://www.subvert.fm/osiris-dreams'
+        />
+        <SomePromo
           logo='/bandcamp-icon.svg'
           heading='Bandcamp'
           body='Buy DRM-free songs for download'

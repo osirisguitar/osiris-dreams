@@ -32,7 +32,7 @@ video {
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 @font-face {
@@ -60,3 +60,36 @@ video {
   src: url('/PilotCommand-3zn93.otf');
 }
 
+/* Container query responsive sizing for SongPromo overlays */
+.song-promo-card {
+  container-type: inline-size;
+}
+
+@container (min-width: 220px) {
+  .song-promo-preview-btn {
+    top: 1rem;
+    left: 1rem;
+    padding: 0.5rem;
+  }
+  .song-promo-play-icon {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+  .song-promo-preview-text {
+    margin-left: 0.75rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .song-promo-services {
+    bottom: 0.75rem;
+    left: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+  }
+  .song-promo-service-link {
+    padding: 0.25rem;
+  }
+  .song-promo-service-icon {
+    max-width: 30px !important;
+  }
+}

@@ -15,6 +15,10 @@ export const songsAndAlbums: Record<string, Song> = {
         url: 'https://www.youtube.com/watch?v=lwn20SruZMs&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=1',
         linkText: 'Lyric music video on YouTube >',
       },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/age-of-anomalies',
+        linkText: 'Buy or stream on Subvert.fm',
+      },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/age-of-anomalies',
         linkText: 'Buy or stream on BandCamp >',
@@ -42,6 +46,10 @@ export const songsAndAlbums: Record<string, Song> = {
       youtube: {
         url: 'https://www.youtube.com/watch?v=GToZu8Jl8u4&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
         linkText: 'Lyric music video on YouTube >',
+      },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/ghost-pod',
+        linkText: 'Buy or stream on Subvert.fm',
       },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/ghost-pod',
@@ -71,6 +79,10 @@ export const songsAndAlbums: Record<string, Song> = {
         url: 'https://www.youtube.com/watch?v=GlB3zEEPM98&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=3',
         linkText: 'Lyric music video on YouTube >',
       },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/hyper-probe',
+        linkText: 'Buy or stream on Subvert.fm',
+      },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/hyper-probe',
         linkText: 'Buy or stream on BandCamp >',
@@ -98,6 +110,10 @@ export const songsAndAlbums: Record<string, Song> = {
       youtube: {
         url: 'https://www.youtube.com/watch?v=XUDAMOQAr-A&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
         linkText: 'Lyric music video on YouTube >',
+      },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/interrupt-sequence',
+        linkText: 'Buy or stream on Subvert.fm',
       },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/interrupt-sequence',
@@ -127,6 +143,10 @@ export const songsAndAlbums: Record<string, Song> = {
         url: 'https://www.youtube.com/watch?v=LV596Sq2owY&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
         linkText: 'Lyric music video on YouTube >',
       },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/requiem-pro-phasmata',
+        linkText: 'Buy or stream on Subvert.fm',
+      },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/requiem-pro-phasmata',
         linkText: 'Buy or stream on BandCamp >',
@@ -154,6 +174,10 @@ export const songsAndAlbums: Record<string, Song> = {
       youtube: {
         url: 'https://www.youtube.com/watch?v=jIb7yCIzHvE&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
         linkText: 'Lyric music video on YouTube >',
+      },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/smokescreen',
+        linkText: 'Buy or stream on Subvert.fm',
       },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/smokescreen',
@@ -183,6 +207,10 @@ export const songsAndAlbums: Record<string, Song> = {
         url: 'https://www.youtube.com/watch?v=8YPOE6Sa4gs&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
         linkText: 'Lyric music video on YouTube >',
       },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/revelation-protocol',
+        linkText: 'Buy or stream on Subvert.fm',
+      },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/revelation-protocol',
         linkText: 'Buy or stream on BandCamp >',
@@ -210,6 +238,10 @@ export const songsAndAlbums: Record<string, Song> = {
       youtube: {
         url: 'https://www.youtube.com/watch?v=vsKxzLwZf0w&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
         linkText: 'Lyric music video on YouTube >',
+      },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/disassembly',
+        linkText: 'Buy or stream on Subvert.fm',
       },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/disassembly',
@@ -239,6 +271,10 @@ export const songsAndAlbums: Record<string, Song> = {
         url: 'https://www.youtube.com/watch?v=GDDJ13JUQL0&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
         linkText: 'Lyric music video on YouTube >',
       },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/vortex-beach',
+        linkText: 'Buy or stream on Subvert.fm',
+      },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/vortex-beach',
         linkText: 'Buy or stream on BandCamp >',
@@ -267,6 +303,10 @@ export const songsAndAlbums: Record<string, Song> = {
         url: 'https://www.youtube.com/watch?v=_07C_qHcAnA&list=PLQGymPL65leszm2uf4twfCszoQGTSC1i3&index=2',
         linkText: 'Lyric music video on YouTube >',
       },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/ghost-testimony',
+        linkText: 'Buy or stream on Subvert.fm',
+      },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/ghost-testimony',
         linkText: 'Buy or stream on BandCamp >',
@@ -293,6 +333,10 @@ export const songsAndAlbums: Record<string, Song> = {
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/the-encounter',
         linkText: 'Buy or stream on BandCamp >',
+      },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/the-encounter',
+        linkText: 'Buy or stream on Subvert.fm',
       },
       youtube: {
         url: 'https://www.youtube.com/watch?v=YPP2mC0I_l8',
@@ -321,6 +365,10 @@ export const songsAndAlbums: Record<string, Song> = {
         url: 'https://osirisdreams.bandcamp.com/track/dark-city',
         linkText: 'Buy or stream on BandCamp >',
       },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/dark-city',
+        linkText: 'Buy or stream on Subvert.fm',
+      },
       youtube: {
         url: 'https://www.youtube.com/watch?v=su3j1V_50Wc',
         linkText: 'Music video on YouTube >',
@@ -348,13 +396,17 @@ export const songsAndAlbums: Record<string, Song> = {
         url: 'https://open.spotify.com/track/4TmojlVjeDul4VAbOYiA3u?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
         linkText: 'Stream on Spotify >',
       },
+      youtube: {
+        url: 'https://www.youtube.com/watch?v=yK_0vJamq0c',
+        linkText: 'Music video on YouTube >',
+      },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/hyper-dimensional-racing',
+        linkText: 'Buy or stream on Subvert.fm',
+      },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/hyper-dimensional-racing',
         linkText: 'Buy or stream on BandCamp >',
-      },
-      youtube: {
-        url: 'https://www.youtube.com/watch?v=TIAroPUxSgg',
-        linkText: 'Music video on YouTube >',
       },
       applemusic: {
         url: 'https://music.apple.com/us/album/hyper-dimensional-racing-single/1762564284?app=music',
@@ -378,6 +430,10 @@ export const songsAndAlbums: Record<string, Song> = {
       spotify: {
         url: 'https://open.spotify.com/track/0QYNw0ZU70Qzww19ljsmoN?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
         linkText: 'Stream on Spotify >',
+      },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/driving-alone',
+        linkText: 'Buy or stream on Subvert.fm',
       },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/driving-alone',
@@ -416,6 +472,10 @@ export const songsAndAlbums: Record<string, Song> = {
         url: 'https://www.youtube.com/watch?v=lriT9Y8kqTg&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=1',
         linkText: 'Music videos on YouTube >',
       },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/biomechanoid-prototype',
+        linkText: 'Buy or stream on Subvert.fm',
+      },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/biomechanoid-prototype',
         linkText: 'Buy or stream on BandCamp >',
@@ -448,6 +508,10 @@ export const songsAndAlbums: Record<string, Song> = {
       youtube: {
         url: 'https://www.youtube.com/watch?v=-ebGoJhwjeg&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=2',
         linkText: 'Music videos on YouTube >',
+      },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/emerging-sentience',
+        linkText: 'Buy or stream on Subvert.fm',
       },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/emerging-sentience',
@@ -482,6 +546,10 @@ export const songsAndAlbums: Record<string, Song> = {
         url: 'https://www.youtube.com/watch?v=EzlmPCJPqDs&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=3',
         linkText: 'Music videos on YouTube >',
       },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/escape-from-cybergenix',
+        linkText: 'Buy or stream on Subvert.fm',
+      },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/emerging-sentience',
         linkText: 'Buy or stream on BandCamp >',
@@ -515,6 +583,10 @@ export const songsAndAlbums: Record<string, Song> = {
         url: 'https://www.youtube.com/watch?v=6iN0XdYOonE&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=4',
         linkText: 'Music videos on YouTube >',
       },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/sanctuary-cover-up',
+        linkText: 'Buy or stream on Subvert.fm',
+      },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/sanctuary-cover-up',
         linkText: 'Buy or stream on BandCamp >',
@@ -546,6 +618,10 @@ export const songsAndAlbums: Record<string, Song> = {
         url: 'https://osirisdreams.bandcamp.com/track/skiing-on-the-moon',
         linkText: 'Buy or stream on BandCamp >',
       },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/skiing-on-the-moon',
+        linkText: 'Buy or stream on Subvert.fm',
+      },
       applemusic: {
         url: 'https://music.apple.com/album/skiing-on-the-moon-single/1665397557?app=music',
         linkText: 'Buy or stream on Apple Music >',
@@ -572,6 +648,10 @@ export const songsAndAlbums: Record<string, Song> = {
       spotify: {
         url: 'https://open.spotify.com/track/0is4c6lMitziyqb5PedtIJ?context=spotify%3Aplaylist%3A4kdun6K9M85drTaCFFyRiF',
         linkText: 'Stream on Spotify >',
+      },
+      subvert: {
+        url: 'https://www.subvert.fm/osiris-dreams/tracks/3am-6502-debugging',
+        linkText: 'Buy or stream on Subvert.fm',
       },
       bandcamp: {
         url: 'https://osirisdreams.bandcamp.com/track/3-am-6502-debugging',
