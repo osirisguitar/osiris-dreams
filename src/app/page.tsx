@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { SomePromo } from './components/somePromo'
 import { SongPromo } from './components/songPromo'
 import { Heading } from './components/heading'
-import { init } from '@socialgouv/matomo-next'
 import { useContext, useEffect } from 'react'
 import { songsAndAlbums } from './data/songsAndAlbums'
 import { PlayerContext } from './components/playerContext'
@@ -20,10 +19,6 @@ import { Countdown } from './components/countdown'
 import { TrackList } from './components/trackList'
 
 export default function Home() {
-  useEffect(() => {
-    init({ url: 'https://matomo.bornholm.se/', siteId: '2' })
-  }, [])
-
   const { setSong } = useContext(PlayerContext)
 
   const playSong = (song: Song) => {
@@ -139,16 +134,16 @@ export default function Home() {
 
       <div className='mb-4 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:text-left'>
         <SomePromo
-          logo='/youtube-icon.svg'
-          heading='YouTube'
-          body='Songs with music videos'
-          link='https://www.youtube.com/watch?v=lriT9Y8kqTg&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=1'
-        />
-        <SomePromo
           logo='/spotify-icon.svg'
           heading='Spotify'
           body='Song streaming'
           link='https://open.spotify.com/album/1U3Z3BgAIBxUi39Fo6R0A7?si=_1loYBKGTVyGZ6iXxeHCag'
+        />
+        <SomePromo
+          logo='/youtube-icon.svg'
+          heading='YouTube'
+          body='Songs with music videos'
+          link='https://www.youtube.com/watch?v=lriT9Y8kqTg&list=PLQGymPL65les27MBwkLn1XTK2rz4U-fxE&index=1'
         />
         <SomePromo
           logo='/bandcamp-icon.svg'

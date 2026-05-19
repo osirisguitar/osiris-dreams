@@ -1,6 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { MainLayout } from './components/mainLayout'
+import { Suspense } from 'react'
+import { MatomoAnalytics } from './components/matomoAnalytics'
 
 export const metadata: Metadata = {
   title: 'OSIRIS DREAMS',
@@ -17,7 +19,12 @@ export default async function RootLayout({
   return (
     <html lang='en'>
       <head></head>
-      <MainLayout>{children}</MainLayout>
+      <MainLayout>
+        {children}
+        <Suspense fallback={null}>
+          <MatomoAnalytics />
+        </Suspense>
+      </MainLayout>
     </html>
   )
 }

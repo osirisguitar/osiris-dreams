@@ -1,16 +1,12 @@
 'use client'
 import Image from 'next/image'
-import { init, push } from '@socialgouv/matomo-next'
+import { push } from '@socialgouv/matomo-next'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { Song } from '../common/types'
 
 export const SongLandingPage = ({ song }: { song: Song }) => {
   const [clickedService, setClickedService] = useState<string | null>(null)
-
-  useEffect(() => {
-    init({ url: 'https://matomo.bornholm.se/', siteId: '2' })
-  }, [])
 
   useEffect(() => {
     if (clickedService) {

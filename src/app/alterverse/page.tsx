@@ -1,16 +1,11 @@
 'use client'
 import Image from 'next/image'
 import { Heading } from '../components/heading'
-import { init } from '@socialgouv/matomo-next'
 import { useEffect } from 'react'
 import { TextBox } from '../components/textBox'
 import Link from 'next/link'
 
 export default function Alterverse() {
-  useEffect(() => {
-    init({ url: 'https://matomo.bornholm.se/', siteId: '2' })
-  }, [])
-
   return (
     <>
       <div className='max-w-5xl items-center justify-between font-mono text-sm lg:flex'>

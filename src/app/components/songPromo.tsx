@@ -26,7 +26,7 @@ export const SongPromo = ({
               <Image
                 src={'/' + (song.albumCover ?? song.id) + '-album-cover.png'}
                 alt='{name}'
-                className='w-full object-cover object-center relative top-0 left-0'
+                className='w-full h-auto object-cover object-center relative top-0 left-0'
                 priority
                 width={300}
                 height={300}

@@ -32,7 +32,7 @@ export const TrackList = ({
                 </div>
               </td>
               <td className='font-[pocket-calculator] uppercase text-green-300 pr-3'>
-                <Link href={'/song/' + song.id}>{song.name}</Link>
+                <Link href={'/songs/' + song.id}>{song.name}</Link>
               </td>
               {Object.keys(song.services)
                 .filter((value, index) => index < 6)

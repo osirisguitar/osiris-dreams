@@ -1,5 +1,5 @@
 'use client'
-import { init, push } from '@socialgouv/matomo-next'
+import { push } from '@socialgouv/matomo-next'
 import { useContext, useEffect } from 'react'
 import { songsAndAlbums } from '../../data/songsAndAlbums'
 import { PlayerContext } from '../../components/playerContext'
@@ -10,10 +10,6 @@ import Image from 'next/image'
 import { TrackList } from '@/app/components/trackList'
 
 export default function Alterverse() {
-  useEffect(() => {
-    init({ url: 'https://matomo.bornholm.se/', siteId: '2' })
-  }, [])
-
   const { setSong } = useContext(PlayerContext)
 
   const playSong = (song: Song) => {

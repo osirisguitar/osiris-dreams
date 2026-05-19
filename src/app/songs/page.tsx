@@ -1,5 +1,5 @@
 'use client'
-import { init, push } from '@socialgouv/matomo-next'
+import { push } from '@socialgouv/matomo-next'
 import { useContext, useEffect } from 'react'
 import { songsAndAlbums } from '../data/songsAndAlbums'
 import { SongPromo } from '../components/songPromo'
@@ -11,10 +11,6 @@ import Image from 'next/image'
 import { Album } from '../components/album'
 
 export default function Songs() {
-  useEffect(() => {
-    init({ url: 'https://matomo.bornholm.se/', siteId: '2' })
-  }, [])
-
   const { setSong } = useContext(PlayerContext)
 
   const playSong = (song: Song) => {
